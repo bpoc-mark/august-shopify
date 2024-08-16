@@ -1,0 +1,239 @@
+#cart-page main{
+  background-color: #fff;
+}
+
+#cart-page main > :nth-child(1) cart-items .title-wrapper-with-link{
+  justify-content: center; 
+  margin: 5rem 0 9.5rem;
+}
+#cart-page main > :nth-child(1) cart-items .title-wrapper-with-link h1{
+  text-transform: uppercase;
+  font-family: ivymode,sans-serif;
+  font-size: 4rem;
+}
+#cart-page main > :nth-child(1) cart-items .title-wrapper-with-link a{
+  display: none;
+}
+#cart-page main > :nth-child(1) cart-items #main-cart-items{
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+#cart-page main > :nth-child(1) cart-items .cart__contents table thead tr th {
+  font-size: 1.2rem;
+  color: #000000;
+  border-bottom: .05rem solid #CCC1AD
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table thead tr th:first-child {
+    width: 50%;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table thead tr th:nth-child(2) {
+    padding-left: 0;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table thead tr th:nth-child(3) {
+    text-align: center;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__media .cart-item__media--wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  border-bottom: .05rem solid #CCC1AD
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody td:nth-child(2) {
+  padding-left: 0;
+  color: #000;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody td:nth-child(3) {
+  padding-bottom: 0;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__media .cart-item__image-container{
+  width: 70px;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__media .cart-item__image-container img{
+  width: 100%;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__media .cart-item__details-container{
+  width: calc(100% - 70px);
+  padding: 0 15px;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__details-container .cart-item__name{
+  font-size: 1.2rem;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__details-container dl{
+  margin-top: .5rem;
+  margin-bottom: 0rem;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__details-container dl .product-option{
+  margin-top: 0;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__details-container dl dt,
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__details-container dl dd{
+  color: #A3A3A3;
+  font-size: 1.2rem;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper quantity-input{
+  width: 150px;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper quantity-input::after{
+  display: none;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper quantity-input::before{
+  display: none;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper quantity-input .quantity__button{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper quantity-input .quantity__input{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 5px;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper cart-remove-button{
+  margin: 0;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__quantity .cart-item__quantity-wrapper cart-remove-button a{
+  text-decoration: underline;
+  text-decoration-color: #CCC1AD;
+  color: #CCC1AD;
+}
+#cart-page main > :nth-child(1) cart-items .cart__contents table tbody .cart-item .cart-item__totals span{
+  font-size: 1.4rem
+}
+
+
+#cart-page main > :nth-child(2) .cart__footer{
+  padding-bottom: 10rem;
+}
+#cart-page main > :nth-child(2) .cart__footer .totals h2{
+  font-size: 1.8rem;
+}
+#cart-page main > :nth-child(2) .cart__footer .tax-note{
+  display: none;
+}
+#cart-page main > :nth-child(2) .cart__footer .cart__blocks>*+*{
+  margin-top: 3rem;
+}
+#cart-page main > :nth-child(2) .cart__footer .cart__blocks button{
+  border-radius: 50px;
+  background-color: #CCC1AD;
+  text-transform: uppercase;
+  color: #000;
+}
+#cart-page main > :nth-child(2) .cart__footer .cart__blocks button::after{
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 1px rgba(204,193,173,0.75);
+}
+#cart-page main > :nth-child(2) .cart__footer .cart__blocks button:hover::after{
+  box-shadow: 0px 0px 1px 2px rgba(204,193,173,0.75);
+}
+
+
+@media only screen and (max-width: 749px) {
+  #cart-page main > :nth-child(1) cart-items .title-wrapper-with-link{
+    margin: 2rem 0 5rem;
+  }
+  #cart-page main > :nth-child(1) cart-items .title-wrapper-with-link h1{
+    font-size: 3.5rem;
+  }
+  
+  #cart-page main > :nth-child(1) cart-items #main-cart-items{
+    border-bottom: 0.2rem solid #CCC1AD;
+    padding-bottom: 54px;
+  }
+  
+  #cart-page main > :nth-child(1) cart-items .cart__contents table thead tr {
+      margin-bottom: 0;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table thead tr th:first-child {
+      width: 100%;
+  }
+  
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr:not(:last-child) {
+    border-bottom: 0.2rem solid #CCC1AD;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td {
+    width: 100%;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td.cart-item__totals {
+    display: flex !important;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:not(:last-child) {
+    border-bottom: .05rem solid #EFEFEF;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:not(:first-child) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:last-child {
+    border-bottom: 0;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(2) {
+    position: relative;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(2)::before {
+    content: "PRICE";
+    font-size: 1.4rem;
+    font-family: hiragino-kaku-gothic-pron,sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(3) {
+    padding-bottom: 0;
+    position: relative;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(3)::before {
+    content: "QUANTITY";
+    font-size: 1.4rem;
+    font-family: hiragino-kaku-gothic-pron,sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(4) {
+    position: relative;
+  }
+  #cart-page main > :nth-child(1) cart-items .cart__contents table tbody tr td:nth-child(4)::before {
+    content: "TOTAL";
+    font-size: 1.4rem;
+    font-family: hiragino-kaku-gothic-pron,sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  #cart-page main > :nth-child(2) .cart__footer{
+    padding-bottom: 20rem;
+  }
+}

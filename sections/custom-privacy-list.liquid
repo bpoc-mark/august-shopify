@@ -1,0 +1,42 @@
+{% for block in section.blocks %}  
+  {% case block.type %}
+    {% when 'privacy-text' %}
+    <div class="Privacy-Page--block">
+      <h2 class="Privacy-Page--title" {{ block.shopify_attributes }}>{{ block.settings.privacy-text-title }}</h2>
+      <p class="text" {{ block.shopify_attributes }}>{{ block.settings.privacy-text-field }}</p>
+    </div>
+  
+  {% endcase %} 
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Privacy Section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "privacy-text",
+        "name": "Items",
+        "settings": [
+          {
+            "id": "privacy-text-title",
+            "type": "textarea",
+            "label": "Header"
+          },
+          {
+            "id": "privacy-text-field",
+            "type": "textarea",
+            "label": "Description"
+          }
+          
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

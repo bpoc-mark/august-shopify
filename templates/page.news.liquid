@@ -1,0 +1,50 @@
+<div class="page-width" id="NewsArchive">
+  <h1 class="title--primary">NEWS</h1>
+  
+  <ul>
+    {% for link in linklists.blog.links %}
+      {% assign blog = link.object %}
+      {%- paginate blog.articles by 6 -%}
+
+      {% for article in blog.articles %}
+        <li class="columnFlex--item">
+          <a href="{{ article.url }}">
+            <div>
+              <figure>
+                <img 
+                  src="{{ article.image.src | img_url: 'medium' }}"
+                  alt="Image"
+                  width=""
+                  height=""
+                  loading="lazy"
+                >
+              </figure>
+              <h3>{{ article.title }}</h3>
+              <span>{{ article.published_at | date: "%Y-%m-%d" }}</span>
+              <!-- <p class="article-card__excerpt rte-width">
+                {%- if article.excerpt.size > 0 -%}
+                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                {%- else -%}
+                  {{ article.content | strip_html | truncatewords: 30 }}
+                {%- endif -%}
+              </p> -->
+              <p class="article-card__excerpt rte-width">
+                {%- if article.excerpt.size > 0 -%}
+                  {{ article.excerpt | strip_html | truncatewords: 30 }}
+                {%- else -%}
+                  {{ article.content | strip_html | truncatewords: 30 }}
+                {%- endif -%}
+              </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+
+      {%- endpaginate -%}
+    {% endfor %}
+  </ul>
+</div>

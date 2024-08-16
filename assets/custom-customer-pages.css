@@ -1,0 +1,150 @@
+#shopify-section-template--19675102019857__main,
+#shopify-section-template--20212913930559__main,
+#shopify-section-template--20551347339583__main {
+    padding: 125px 0 95px;
+}
+
+.page-Contact{
+    position: relative;
+    max-width: 850px;
+    border-radius: 30px;
+    padding: 75px 0;
+    margin: 0 auto 20px;
+}
+
+.page-Contact h1{
+    font-family: ivymode,sans-serif;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font-weight:400;
+}
+
+.page-Contact h3{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.page-Contact p{
+  font-size: 1.2rem !important;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 25px;
+}
+.page-Contact p a{
+  font-size: 1.2rem !important;
+  text-decoration: none;
+}
+
+.page-Contact hr{
+    margin: 3.5rem 0 1.5rem;
+    background-color: #000;
+}
+
+.page-Contact form .field::after{
+    box-shadow: 0 0 0 var(--inputs-border-width) rgba(204, 193, 173,var(--inputs-border-opacity)) !important;
+}
+
+.page-Contact form .field:hover:after{
+    box-shadow: 0 0 0 2px rgba(204, 193, 173,var(--inputs-border-opacity)) !important;
+}
+
+.page-Contact form .field input:focus{
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+}
+
+.page-Contact form .field textarea:focus{
+    box-shadow: 0 0 0 2px rgba(204, 193, 173,var(--inputs-border-opacity)) !important;
+}
+
+.page-Contact form .field input,
+.page-Contact form .field textarea{
+    background-color: #fff;
+}
+
+.page-Contact form .contact__button{
+    text-align: center;
+}
+
+.page-Contact form .contact__button button,
+.page-Contact form button {
+    min-width: 100%;
+    background-color: #000;
+    border-radius: 24px;
+    color: #fff;
+}
+
+.page-Contact form .contact__button button::after,
+.page-Contact form button::after{
+    border-radius: 24px;
+}
+
+.page-Contact form .contact__button button:hover:after,
+.page-Contact form button:hover:after{
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (min-width: 990px){
+  .page-Contact .page-width--narrow{
+    max-width: 79rem;
+  }
+}
+
+@media only screen and (max-width: 1070px){
+  .page-Contact{
+      /* margin-left: 20px;
+      margin-right: 20px; */
+  }
+}
+
+@media only screen and (max-width: 749px){
+  
+  .page-Contact{
+      border-radius: 20px;
+      padding: 35px 0 25px;
+      margin-top: 0;
+      margin-bottom: 20px;
+  }
+  
+  .page-Contact h1{
+      font-size: 2rem;
+      top: -12px;
+  }
+  
+  .page-Contact p br{
+    display: none;
+  }
+  
+  .page-Contact form .contact__button button,
+  .page-Contact form button{
+      min-width: 100%;
+  }
+}
+.field:after{
+  display:none;
+}
+.field {
+  text-align: left;
+  flex-direction: column-reverse;
+}
+.field__label, .customer .field label {
+  display:block;
+  position: unset;
+  left: unset;
+  top: unset;
+}
+.field__input:focus, .field__input:not(:placeholder-shown), .field__input:-webkit-autofill, .customer .field input:focus, .customer .field input:not(:placeholder-shown), .customer .field input:-webkit-autofill{
+  padding: .8rem 1.5rem .8rem 2rem;
+}
+.field__input:focus~.field__label, .field__input:not(:placeholder-shown)~.field__label, .field__input:-webkit-autofill~.field__label, .customer .field input:focus~label, .customer .field input:not(:placeholder-shown)~label, .customer .field input:-webkit-autofill~label {
+  font-size: 1.4rem;
+}

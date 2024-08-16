@@ -1,0 +1,30 @@
+.Tokusho-Page {
+  padding: 75px 0;
+}
+.Tokusho-Page h2{
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.Tokusho-Page .section01--wrap {
+  max-width: 773px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+.Tokusho-Page--block {
+  border-bottom: 1px solid #CCC1AD;
+  padding: 12px 0;
+}
+.Tokusho-Page--block p {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+@media screen and (max-width: 750px) {
+  .Tokusho-Page .section01--wrap {
+    padding: 0 30px;
+  }
+  .Tokusho-Page h2{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}

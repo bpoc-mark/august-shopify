@@ -1,0 +1,60 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+<div class="top_LP">
+    <section class="section07">
+        <div class="section07--wrap">
+            <div class="section07--floattop">
+                <h3>DESIGNER’S<br class="sp"> COLUMN</h3>
+            </div>
+            <div class="section07--container">
+                <ul class="columnFlex">
+                  {% assign counter = 0 %}
+                  {% for link in linklists.blog.links %}
+                    {% assign blog = link.object %}
+                    {% for article in blog.articles %}
+                      {% if counter < 3 %}
+                          <li class="columnFlex--item">
+                            <a href="{{ article.url }}">
+                              <div>
+                                <figure>
+                                  <img 
+                                    src="{{ article.image.src | img_url: 'medium' }}"
+                                    alt="Image"
+                                    width=""
+                                    height=""
+                                    loading="lazy"
+                                  >
+                                </figure>
+                                <h3>{{ article.title }}</h3>
+                                <span>{{ article.published_at | date: "%Y-%m-%d" }}</span>
+                              </div>
+                            </a>
+                          </li>
+                          {% assign counter = counter | plus: 1 %}
+                        {% else %}
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+                  {% endfor %}
+                </ul>
+            </div>
+            <div class="section07--floatbtm">
+                <a href="{{ '/blogs/news' | link }}" class="btn--link btn--link__center">
+                    <span>MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+  {
+    "name": "Top Section 07",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

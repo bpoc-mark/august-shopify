@@ -1,0 +1,62 @@
+#collection-page #MainContent .shopify-section{
+  background-color: #fff;
+}
+
+.collection-hero .collection-hero__title{
+  text-transform: uppercase;
+  font-family: ivymode,sans-serif;
+  font-size: 150px;
+  font-weight: 300;
+  color: #CCC1AD;
+}
+
+@media screen and (min-width: 750px){
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__heading,
+  #collection-page #MainContent > :nth-child(2) aside .facets .facet-filters__label{
+    display: none;
+  }
+
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(2){
+    order: 4;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(3){
+    padding-left: 0;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(3) select{
+    font-size: 1.6rem;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(4){
+    width: 100%;
+    order: 3;
+    position: relative;
+    padding-top: 36px;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(4)::before{
+    content: "";
+    display: block;
+    width: 370px;
+    height: 0.05rem;
+    background-color: #CCC1AD;
+    position: absolute;
+    top: 14px;
+    right: 0;
+  }
+  #collection-page #MainContent > :nth-child(2) aside .facets .facets__form > :nth-child(4) .product-count__text{
+    font-size: 2rem;
+    color: #CCC1AD;
+  }
+}
+
+@media screen and (max-width: 989px){
+  .collection-hero .collection-hero__title{
+    font-size: 50px;
+  }
+}

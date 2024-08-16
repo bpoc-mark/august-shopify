@@ -1,0 +1,41 @@
+{% for block in section.blocks %}  
+  {% case block.type %}
+    {% when 'custom-text' %}
+    <div class="Tokusho-Page--block">
+      <p class="text" {{ block.shopify_attributes }}>{{ block.settings.custom-text-field }}</p>
+      <p class="text" {{ block.shopify_attributes }}>{{ block.settings.custom-text-asd }}</p>
+    </div>
+  
+  {% endcase %} 
+{% endfor %}
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "custom-text",
+        "name": "Items",
+        "settings": [
+          {
+            "id": "custom-text-field",
+            "type": "textarea",
+            "label": "Header"
+          },
+          {
+            "id": "custom-text-asd",
+            "type": "textarea",
+            "label": "Description"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

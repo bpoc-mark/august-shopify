@@ -1,0 +1,105 @@
+#product-page product-info .product__title h1{
+  font-size: 2.2rem;
+}
+
+#product-page product-info .price {
+  font-size: 1.2rem;
+}
+
+#product-page product-info variant-radios{
+  position: relative;
+  padding-top: 28px;
+  margin: 9rem 0 0;
+}
+#product-page product-info variant-radios::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.05rem;
+  background-color: #CCC1AD;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#product-page product-info variant-radios fieldset .form__label{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+#product-page product-info variant-radios .product-form__input input[type=radio]+label{
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  border-color: #DDDDDD;
+  color: #000;
+  padding: 1.8rem 2rem
+}
+#product-page product-info variant-radios .product-form__input input[type=radio]:checked+label{
+  background-color: #FFFFFF;
+  border-color: #CCC1AD;
+}
+
+#product-page product-info .product-form__quantity .quantity{
+  width: 150px;
+}
+#product-page product-info .product-form__quantity .quantity::before{
+  display: none;
+}
+#product-page product-info .product-form__quantity .quantity::after{
+  display: none;
+}
+#product-page product-info .product-form__quantity .quantity .quantity__button{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#product-page product-info .product-form__quantity .quantity .quantity__input{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+#product-page product-info .product-form__buttons .product-form__submit{
+  border-radius: 50px;
+  background-color: #fff;
+}
+#product-page product-info .product-form__buttons .product-form__submit::after{
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 1px rgba(204,193,173,0.75);
+}
+#product-page product-info .product-form__buttons .product-form__submit:hover:after{
+  box-shadow: 0px 0px 1px 2px rgba(204,193,173,0.75);
+}
+
+#product-page product-info .product-form__buttons .shopify-payment-button button{
+  border-radius: 50px;
+  background-color: #CCC1AD;
+}
+#product-page product-info .product-form__buttons .shopify-payment-button button::after{
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 1px rgba(204,193,173,0.75);
+}
+#product-page product-info .product-form__buttons .shopify-payment-button button:hover:after{
+  box-shadow: 0px 0px 1px 2px rgba(204,193,173,0.75);
+}
+
+#product-page product-info .product__description{
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 989px){
+  #product-page main > section > section{
+    padding-top: 30px;
+  }
+
+  #product-page .product__info-wrapper{
+    padding-top: 15px;
+  }
+  
+  #product-page product-info variant-radios{
+    margin: 2rem 0 0;
+  }
+  #product-page product-info variant-radios .product-form__input input[type=radio]+label{
+    padding: 1.3rem 1.5rem;
+    margin: 0.7rem 0 0.2rem 0;
+  }
+}

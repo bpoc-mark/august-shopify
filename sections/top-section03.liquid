@@ -1,0 +1,56 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+
+<div class="top_LP">
+    <section class="section03">
+        <div class="section03--wrap">
+            <div class="section03--cont">
+                <div class="textWrap">
+                    <h3>{{ section.settings.header }}</h3>
+                    <figure>
+                        <img
+                            src="{{ section.settings.image | img_url: 'original' }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                    <a href="{{ section.settings.link }}" class="btn--link btn--link__center">
+                        <span>SHOP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+  {
+    "name": "Top Section 03",
+    "settings": [
+      {
+        "type": "text",
+        "id": "header",
+        "label": "Header"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Link",
+        "info": "Select an link for the button."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Select an image for the section."
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

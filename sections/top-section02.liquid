@@ -1,0 +1,184 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+{{ 'lp-shop-menu.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<style>
+  .lpCollection {
+    overflow: hidden;
+  }
+  
+  .lpCollection .lpCollection--wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 150px 35px 160px;
+  }
+  
+  .lpCollection .lpCollection--ttl {
+    font-family: ivymode, sans-serif;
+    font-size: 150px;
+    font-weight: 300;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+  @media only screen and (min-width: 990px) {
+    .lpCollection .lpCollection--cont .catList li:nth-child(even){
+      margin-top: 100px;
+    }
+    .lpCollection .lpCollection--cont .catList li:nth-child(odd)::before{
+      left: 20px;
+      top: -30px;
+      bottom: initial;
+    }
+    .lpCollection .lpCollection--cont .catList li:nth-child(even)::before{
+      left: initial;
+      right: -65px;
+      bottom: 60px;
+    }
+  }
+  @media only screen and (max-width: 989px) {
+    .lpCollection .lpCollection--wrap {
+      padding: 115px 0 0px;
+    }
+    .lpCollection .lpCollection--ttl {
+      font-size: 55px;
+      margin-bottom: 35px;
+      padding-right: 20px;
+      margin-bottom: 35px;
+    }
+    .lpCollection .lpCollection--cont .small-hide{
+      display: none;
+    }
+    .lpCollection .lpCollection--cont .collectionSwiper{
+      padding-right: 20px;
+      padding-left: 50px;
+    }
+    .lpCollection .lpCollection--cont .catList li::before{
+      left: 20px;
+      top: -35px;
+      bottom: initial;
+    }
+  }
+</style>
+
+<div class="top_LP"> 
+    <section class="lpCollection"> 
+        <div class="lpCollection--wrap">
+            <h3 class="lpCollection--ttl">CATEGORY</h3>
+            <div class="lpCollection--cont"> 
+                <ul class="catList small-hide">
+                  {%- assign sorted_collections = collections | sort: 'collection.metafields.custom.collection_number' | reverse -%}
+                  
+                  {%- for collection in sorted_collections -%}
+                    <li>
+                      {% comment %}
+                        {% if collection.metafields.custom.collection_number %}
+                          {% assign collectionNumber = collection.metafields.custom.collection_number %}
+                          {% if collectionNumber.size == 1 %}
+                            {% assign collectionNumber = '0' | append: collectionNumber %}
+                          {% endif %}
+                          <span>{{ collectionNumber }}</span>
+                        {% endif %}
+                      {% endcomment %}
+                    
+                      {%- if collection.image -%}
+                        {%- assign collection_image = collection.image -%}
+                      {%- elsif collection.products.first and collection.products.first.images != empty -%}
+                        {%- assign collection_image = collection.products.first.featured_image -%}
+                      {%- else -%}
+                        {%- assign collection_image = blank -%}
+                      {%- endif -%}
+                        <a href="{{ collection.url }}">
+                            <div>
+                                <figure>
+                                  <img
+                                      src="{{ collection_image | img_url: '480x' }}"
+                                      alt="Image"
+                                      width=""
+                                      height=""
+                                      loading="lazy"
+                                    >
+                                </figure>
+                                <h2>{{ collection.title }}</h2>
+                            </div>
+                        </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+                <div class="swiper collectionSwiper">
+                  <ul class="swiper-wrapper catList">
+                    {%- for collection in collections -%}
+                      <li class="swiper-slide">
+                        {% comment %}
+                          {% if collection.metafields.custom.collection_number %}
+                            {% assign collectionNumber = collection.metafields.custom.collection_number %}
+                            {% if collectionNumber.size == 1 %}
+                              {% assign collectionNumber = '0' | append: collectionNumber %}
+                            {% endif %}
+                            <span>{{ collectionNumber }}</span>
+                          {% endif %}
+                        {% endcomment %}
+                      
+                        {%- if collection.image -%}
+                          {%- assign collection_image = collection.image -%}
+                        {%- elsif collection.products.first and collection.products.first.images != empty -%}
+                          {%- assign collection_image = collection.products.first.featured_image -%}
+                        {%- else -%}
+                          {%- assign collection_image = blank -%}
+                        {%- endif -%}
+                          <a href="{{ collection.url }}">
+                              <div>
+                                  <figure>
+                                    <img
+                                        src="{{ collection_image | img_url: '480x' }}"
+                                        alt="Image"
+                                        width=""
+                                        height=""
+                                        loading="lazy"
+                                      >
+                                  </figure>
+                                  <h2>{{ collection.title }}</h2>
+                              </div>
+                          </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer="defer"></script>
+<!-- Initialize Swiper -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var swiper = new Swiper(".collectionSwiper", {
+      slidesPerView: 1.1,
+      spaceBetween: 30,
+       breakpoints: {
+         440: {
+          slidesPerView: 1.8,
+          spaceBetween: 30
+        },
+        640: {
+          slidesPerView: 2.8,
+          spaceBetween: 30
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Top Section 02",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

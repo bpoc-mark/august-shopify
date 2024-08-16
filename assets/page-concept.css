@@ -1,0 +1,369 @@
+
+.Concept-Page--content {
+  background-color: #f1ede8;
+}
+.Concept-Page .section01 {
+  position: relative;
+}
+.Concept-Page .section01 .left-base {
+  width: 50%;
+  position: absolute;
+  right: 50%;
+  left: 0;
+  top: 300px;
+}
+.Concept-Page .section01 .left-base figure {
+  margin: 0;
+}
+.Concept-Page .section01 .left-base figure img {
+  width: 100%;
+}
+.Concept-Page .section01 .txt-sp {
+  padding: 0 30px;
+}
+.Concept-Page .section01 .txt-sp .p-small {
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  color: #ccc1ad;
+  text-align: left;
+  margin: 0 !important;
+}
+.Concept-Page .section01 .txt-sp .p-black {
+  text-align: left;
+  font-size: 12px;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  padding: 17px 0;
+  font-weight: 100;
+  margin: 0 !important;
+}
+.Concept-Page .section01--title {
+  font-family: ivymode,sans-serif;
+  font-size: 150px;
+  color: #ccc1ad;
+  font-weight: 100;
+  text-align: left;
+  line-height: 140px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 !important;
+}
+.Concept-Page .section01--wrap {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 94px 100px;
+}
+.Concept-Page .section01--wrap .sect01_flex {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.Concept-Page .section01--wrap .sect01_flex--item img {
+  width: 100%;
+  height: 100%;
+}
+.Concept-Page .section01--wrap .sect01_flex--item figure {
+  margin: 0;
+  padding: 0;
+}
+.Concept-Page .section01--wrap .sect01_flex--item:first-child {
+  width: 688px;
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child {
+  width: calc(100% - 688px);
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child figure {
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child figure::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child img {
+  width: 197px;
+  height: 34px;
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child .p-small {
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #ccc1ad;
+  text-align: left;
+}
+.Concept-Page .section01--wrap .sect01_flex--item:last-child .p-black {
+  text-align: left;
+  font-size: 15px;
+  font-family: "hiragino-kaku-gothic-pron", sans-serif;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+  padding-top: 50px;
+  font-weight: 100;
+}
+.Concept-Page .section01--wrap .sect01_flex .right {
+  padding: 0 72px 0 35px;
+}
+.Concept-Page .section02 {
+  position: relative;
+  overflow: hidden;
+  margin-top: 31.968vw;
+  margin-bottom: 300px;
+}
+.Concept-Page .section02 span {
+  position: absolute;
+  z-index: 2;
+  border-bottom: 1px solid #ccc1ad;
+  width: 200%;
+  transform: rotate(-30deg);
+  transform-origin: bottom left;
+  bottom: 0;
+}
+.Concept-Page .section02--wrap_sp-txt {
+  font-size: 12px;
+  padding: 40px 29.8px 0;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+}
+.Concept-Page .section02--title {
+  font-size: 125px;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-family: ivymode,sans-serif;
+  font-weight: 100;
+  margin: 0;
+}
+.Concept-Page .section02--content {
+  max-width: 1366px;
+  padding: 0 100px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 192px;
+}
+.Concept-Page .section02--content .august {
+  position: absolute;
+  z-index: 3;
+  right: 181px;
+  top: 0;
+  margin: 0;
+}
+.Concept-Page .section02--content span {
+  position: absolute;
+  z-index: 2;
+  border-bottom: 1px solid #ccc1ad;
+  width: 200%;
+  transform: rotate(-50deg);
+  transform-origin: bottom left;
+  bottom: 0;
+  left: 0;
+}
+.Concept-Page .section02--left {
+  width: 33.3333333333%;
+  z-index: 5;
+  position: relative;
+  padding-top: 75px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.Concept-Page .section02--center {
+  width: 33.3333333333%;
+  position: relative;
+  z-index: 2;
+}
+.Concept-Page .section02--center figure {
+  margin: 0px -45px;
+}
+.Concept-Page .section02--center figure img {
+  width: 100%;
+}
+.Concept-Page .section02--right {
+  z-index: 5;
+  width: 33.3333333333%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  padding-bottom: 44px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.Concept-Page .section03--base picture {
+  margin: 0;
+  height: 431px;
+}
+.Concept-Page .section03--base picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Concept-Page .section03--wrap {
+  max-width: 1366px;
+  padding: 0 100px;
+  margin-top: -149px;
+  padding-bottom: 200px;
+}
+.Concept-Page .section03--wrap p {
+  font-size: 12px;
+  line-height: 28px;
+  letter-spacing: 1.2px;
+  max-width: 390px;
+  margin-left: 100px;
+  font-weight: 100;
+}
+.shopify-section-group-header-group {
+  z-index: 10 !important;
+}
+
+/* 
+	RESPONSIVE
+  */
+@media only screen and (min-width: 1367px) {
+  .Concept-Page .section02 span {
+    transform: rotate(-27.5deg);
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .Concept-Page .section01 .txt-sp {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1367px) {
+  .Concept-Page .section02 {
+    margin-top: 28vw;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .pc-only-bigger {
+    display: none !important;
+  }
+  .Concept-Page .section01 .left-base {
+    position: relative !important;
+    top: -25px !important;
+    width: calc(100% - 30px);
+  }
+  .Concept-Page .section01--wrap {
+    padding: 48px 30px 0;
+  }
+  .Concept-Page .section01--title {
+    font-size: 55px;
+    line-height: 47px !important;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .Concept-Page .section01--title br {
+    display: none;
+  }
+  .Concept-Page .section01 .sp-only {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .sp-only {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .Concept-Page .section02--center figure img {
+    padding: 0 5.333vw;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .section02--center {
+    width: 100% !important;
+  }
+  .Concept-Page .section02--center figure img {
+    padding: 0 20px;
+  }
+  .Concept-Page .section01 .pc-only {
+    display: none;
+  }
+  .Concept-Page .section01--wrap .sect01_flex--item:first-child {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 899px) {
+  .Concept-Page .section01 .txt-sp .p-small {
+    padding-top: 16px;
+  }
+  .Concept-Page .section01 .txt-sp .p-black {
+    padding: 8px 0 17px;
+  }
+  .pc-only {
+    display: none !important;
+  }
+  .Concept-Page .section02--title {
+    font-size: 55px;
+    line-height: 50px !important;
+    margin-bottom: 55px;
+    margin-top: 0;
+    font-weight: 100;
+  }
+  .Concept-Page .section02--content .august {
+    top: unset;
+    bottom: 0;
+    right: unset;
+    width: 100%;
+    left: 0;
+  }
+  .Concept-Page .section02--content .august img {
+    width: 100%;
+    padding: 0 100px;
+  }
+  .Concept-Page .section02--content {
+    padding-bottom: 18px;
+    margin-top: 25px;
+  }
+  .Concept-Page .section02 {
+    margin-top: 139px;
+    margin-bottom: 157px;
+  }
+  .section03--wrap {
+    padding: 0 30px !important;
+    margin-top: 40px !important;
+  }
+  .section03--wrap p {
+    max-width: unset !important;
+    margin-left: unset !important;
+  }
+  .Concept-Page .section03--base picture img {
+    padding-left: 30px;
+    height: 460px !important;
+  }
+  .section03 {
+    padding-bottom: 140px;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .sp-only-smaller {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Concept-Page .section02--content span {
+    transform: rotate(-46deg);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .Concept-Page .section02--content span {
+    transform: rotate(-42deg);
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "current": {
+    "logo": "shopify:\/\/shop_images\/august_logo.png",
+    "logo_width": 130,
+    "type_header_font": "assistant_n4",
+    "heading_scale": 100,
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
+    "page_width": 1200,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "none",
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "standard",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "background-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "background-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "background-1",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 0,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "bottom left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "accent-2",
+    "sold_out_badge_color_scheme": "inverse",
+    "brand_headline": "",
+    "brand_description": "<p><\/p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/august_____official\/",
+    "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
+    "social_vimeo_link": "",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": true,
+    "cart_type": "notification",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "",
+    "sections": {
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
+        }
+      },
+      "featured-collection": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Featured collection",
+          "heading_size": "h1",
+          "description": "",
+          "show_description": false,
+          "description_style": "body",
+          "collection": "",
+          "products_to_show": 4,
+          "columns_desktop": 4,
+          "full_width": false,
+          "show_view_all": true,
+          "view_all_style": "solid",
+          "enable_desktop_slider": false,
+          "color_scheme": "",
+          "image_ratio": "adapt",
+          "image_shape": "default",
+          "show_secondary_image": false,
+          "show_vendor": false,
+          "show_rating": false,
+          "enable_quick_add": false,
+          "columns_mobile": "2",
+          "swipe_on_mobile": false,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "custom-tokusho-list": {
+        "type": "custom-tokusho-list",
+        "blocks": {
+          "c239b515-1fbc-4d50-a215-cb4238b534c0": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "事業者の名称",
+              "custom-text-asd": "株式会社costes"
+            }
+          },
+          "05783319-be31-48f8-baf6-1057cb04d4b2": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "通信販売に関する業務の責任者氏名",
+              "custom-text-asd": "中島 里穂"
+            }
+          },
+          "b9662128-9a75-4259-bc20-ea91cb3efe79": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "住所",
+              "custom-text-asd": "〒460-0003 愛知県名古屋市中区錦３－２２－２４　ATS広小路ビル３F"
+            }
+          },
+          "12c484d9-cbf7-468f-bea4-3760d3463453": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "電話番号",
+              "custom-text-asd": "052-684-5835"
+            }
+          },
+          "28bd3376-5397-4b80-9414-7d1b900539dd": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "お問い合わせ",
+              "custom-text-asd": "お問い合わせフォーム"
+            }
+          },
+          "138aacf1-8835-4917-ba6e-19b823ca5e5b": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "商品の販売価格",
+              "custom-text-asd": "当ウェブサイト（当オンラインブティック）に掲載されている各商品のコンテンツ・ページにて表示する価格です。 なお、当オンラインブティックに表示しております商品代金は、全て消費税込の価格です。"
+            }
+          },
+          "51cfeafa-8de6-47ff-a32e-51714bb10540": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "配送料",
+              "custom-text-asd": "一配送当たり　1,100円（税込み・全国一律）\n一度のご注文でも複数に分けて配送が必要な場合は、その都度配送料が必要となります。"
+            }
+          },
+          "0763297a-abee-4534-b6ca-5f6333484a11": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "お支払い方法",
+              "custom-text-asd": "クレジットカード\nご利用可能なお支払い方法はクレジットカードとApple Pay、Google Payです。 ご利用いただけるカードブランドはMasterCard®、Visa®、JCB®、American Express®です。"
+            }
+          },
+          "7e578d23-3366-47bf-a4e4-4f8676487123": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "支払い時期",
+              "custom-text-asd": "ご利用の決済方法の締め日や契約内容により異なります。ご利用されるカード会社までお問い合わせください。"
+            }
+          },
+          "be20559e-3a8b-4690-99c4-8ca4f6a22833": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "商品引渡時期",
+              "custom-text-asd": "通常の商品は1週間程度でお届けいたします。 ただし、受注生産商品や新作、在庫商品に関しましても在庫状況によりましては余分にお時間をいただく場合もございますのであらかじめご了承ください。\n年末年始やゴールデンウィークなどの期間も、通常よりも配送にお時間を頂戴いたします。\n一部商品を除き配送日の指定が可能ですので、カート内の詳細項目の指定ページで指定日をお選びください。配送日指定のない商品に関しましては、弊社の出荷準備が整い次第の配送となります。\n※状況により、配送日の指定をされていても指定どおりにお届けができない場合がございますので、あらかじめご了承ください。"
+            }
+          },
+          "5a9bcaa3-a0ad-406e-9bae-6086e9b7da5b": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "返品について",
+              "custom-text-asd": "お客様のご都合による返品およびキャンセルはお受けできかねますので、あらかじめご了承ください。\n商品に瑕疵があった場合（商品に汚損・破損があった場合をいい、商品の配送中に汚損・破損が生じた場合を含みます。）、返品または交換の対応をさせていただきます。 商品到着日より14日以内にお問い合わせフォームよりご連絡をお願いいたします。"
+            }
+          },
+          "beecdad2-98c0-4927-a145-7f0b21cbb69d": {
+            "type": "custom-text",
+            "settings": {
+              "custom-text-field": "制限事項",
+              "custom-text-asd": "販売数量に限りがございますので、お客様のご要望に添えないこともあります。予めご了承ください。\n未成年者の方は、当オンラインブティックからのご購入申し込みはできませんのでご了承くださいますようお願いいたします。\n一部取扱いのない商品や、品切れの場合もございますので、ご了承ください\n価格は予告なく変更されることがありますので、ご了承ください。"
+            }
+          }
+        },
+        "block_order": [
+          "c239b515-1fbc-4d50-a215-cb4238b534c0",
+          "05783319-be31-48f8-baf6-1057cb04d4b2",
+          "b9662128-9a75-4259-bc20-ea91cb3efe79",
+          "12c484d9-cbf7-468f-bea4-3760d3463453",
+          "28bd3376-5397-4b80-9414-7d1b900539dd",
+          "138aacf1-8835-4917-ba6e-19b823ca5e5b",
+          "51cfeafa-8de6-47ff-a32e-51714bb10540",
+          "0763297a-abee-4534-b6ca-5f6333484a11",
+          "7e578d23-3366-47bf-a4e4-4f8676487123",
+          "be20559e-3a8b-4690-99c4-8ca4f6a22833",
+          "5a9bcaa3-a0ad-406e-9bae-6086e9b7da5b",
+          "beecdad2-98c0-4927-a145-7f0b21cbb69d"
+        ],
+        "settings": {
+        }
+      },
+      "custom-privacy-list": {
+        "type": "custom-privacy-list",
+        "blocks": {
+          "9193eee0-fd00-4c50-a668-bf9ac6c31752": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "プライバシーポリシー",
+              "privacy-text-field": "株式会社costes(以下、「当社」という。)は、当社の事業の用に供するすべての個人情報を適切に取扱うため、 当社全従業者が遵守すべき行動基準として本個人情報保護方針を定め、その遵守の徹底を図ることといたします。<br>\n<br>\n・当社は、個人情報の取扱いに関する法令、国が定める指針その他の規範を遵守するため、個人情報保護管理における規則を策定し、適切に運用いたします。<br>\n・当社は、個人情報の取扱いに関する法令、国が定める指針その他の規範を遵守するため、個人情報保護管理における規則を策定し、適切に運用いたします。<br>\n・当社は、事業の内容及び規模を考慮した適切な個人情報の取得、利用及び提供を行います。それには特定された利用目的の達成に必要な範囲を超えた個人情報の取扱いを行わないこと及びそのための措置を講じることを含みます。<br>\n・当社は、個人情報の取扱いの全部又は一部を委託する場合は、その取扱いを委託された個人情報の安全管理が図られるよう、委託を受けた者に対する必要かつ適切な監督を行います。<br>\n・当社は、本人の同意がある場合又は法令に基づく場合を除き、個人情報を第三者に提供することはありません。<br>\n・当社は、個人情報の漏えい、滅失又はき損の防止及び是正のための措置を講じます。<br>\n・当社は、個人情報の取扱いに関する苦情及び相談への適切かつ迅速な対応に努めます。 また、当社が保有する開示対象個人情報の開示等の求め(利用目的の通知、 開示、訂正・追加又は削除、利用又は提供の停止）を受け付けます。 開示等の求めの手続きにつきましては、以下の「個人情報に関する相談窓口」までご連絡ください。<br>\n・当社は、個人情報保護管理規則の継続的改善を行ないます。"
+            }
+          },
+          "06d8cf6d-109d-44cc-a863-90cba9459aae": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "個人情報取り扱い事業者の<br>氏名または名称",
+              "privacy-text-field": "株式会社costes"
+            }
+          },
+          "5f9faed9-1908-4ff9-8991-be04a58064c8": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "すべての保有個人データの利用目的",
+              "privacy-text-field": "当社が、衣料品の製造販売業およびその附帯事業を主な事業としていることを踏まえて当社が取扱う個人情報の利用目的を以下のように定めます。<br><br>\n1. お客様の個人情報\nご契約内容を実施し、適切に管理するため<br><br>\n\n2. お取引先様の個人情報\nお取引先様との間のご契約内容を適切に管理するため<br><br>\n\n3. 株主の皆様の個人情報\n会社法及び商法に基づく権利の行使・義務の履行のため\n当社から各種便宜を供与するため\n株主と会社の関係の円滑化を図るための各種の施策を実施するため\n各種法令に基づき所定の基準による株主のデータを作成する等、株主管理のため<br><br>\n\n4. 当社への入社を希望される皆様の個人情報\n就職先としてご興味をお持ちになった方並びにご応募いただいた方への採用、募集情報等の提供・連絡のため\n採用選考業務のため<br><br>\n\n5. 当社の社員の個人情報\n業務上の連絡、社員名簿の作成、法律上要求される諸手続(本人退職後も含む)、その他雇用管理のため。\n人事選考、配属先および出向、派遣先の決定のため。\n報酬の決定および支払、税務処理、社会保険関連の手続き、福利厚生の提供のため。\nビデオ及びオンラインによるモニタリング等における安全管理措置のため。<br><br>\n\n6. 当社へお問合せ頂いた方の個人情報\n当社の応対品質等の向上のため\nお問い合わせやご連絡内容を正確に把握し、対処するため\n※上記利用目的において、「ご契約内容を適切に管理するため」としているものは、「契約に入る前の段階における利用」と「契約終了後における利用」を含みます。<br><br>"
+            }
+          },
+          "69772f58-6980-4f3b-8eb6-bf89ac1eb18a": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "開示等の求めに応じる手続き",
+              "privacy-text-field": "開示等の求めの申し出先<br>\nお問い合わせフォーム <br><br>\n\n開示等の求めに際して提出すべき書面の様式その他の開示等の求めの方式 <br>\n下記を当社までご送付ください。できる限り迅速に対応いたします。<br><br>\n\n\na）当社指定の「開示等の求め申請書」\nお手元にない場合は、ご連絡ください。こちらからお送りいたします。<br><br>\n\nb) 本人確認書類<br><br>\n\n　1）ご本人によるお申し込みの場合\n　不要（後日、ご本人確認のためにご連絡することがあります。）<br><br>\n\n　2）代理人によるお申し込みの場合\n　下記の書類のうち該当するもののすべて。<br><br>\n\n① 親権者（または未成年被後見人)の場合\n本人の住所・本籍を確認できる公的証明書のコピー\n戸籍謄本(全部事項証明)1通のコピー\n代理人の住所\n本籍を確認できる公的証明書のコピー\n② 成年後見人(成年被後見人の法定代理人)の場合\n本人の住所・本籍を確認できる公的証明書のコピー\n戸籍謄本(全部事項証明)1通のコピー\n代理人の住所・本籍を確認できる公的証明書のコピー\n③ 委任状による代理人の場合 <br>\n本人の印鑑証明書のコピー <br>\n当社指定の委任状(本人の印鑑証明書で使用している印鑑を捺印したもの) <br>\n(当社指定の委任状がお手元にない場合は、ご連絡ください。早急にご郵送します。）<br>\n代理人の住所・本籍を確認できる公的証明書のコピー <br>\n※「公的証明書」とは、運転免許証、各種健康保険証・年金手帳等、写真付き住民基本台帳カード、旅券（パスポート）、外国人登録証明書、印鑑登録証明書、住民票の写し、戸籍謄本・抄本、外国人登録原票の写し などを言います。<br><br>\n\n※ご提示いただいた本人確認書類 は、以下の通り利用いたします。ご同意いただける方のみご送付下さい。<br><br>\n\n当個人情報は、本人からの開示等の求めに応じるために利用いたします。<br>\nご提示いただく本人確認書類によっては、本籍地等特定 の機微な個人情報を取得することがあります。<br>\n法令に基づく場合を除いて、当個人情報を本人の同意なく第三者に提供することはありません。 また、当個人情報の取扱いを委託する予定はありません <br>\n本人確認書類等により本人確認が出来ない場合、開示等の求めに応じられない場合がございます。<br><br>\n\nc) 手数料 <br>\n「利用目的の通知」あるいは「開示」につきましては、1件のお申込みにつき手数料として1,000円いただきます。 1,000円分の郵便小為替を上記書類にあわせてご同封ください。<br>\n上記の通り手数料が同封されていなかった場合は、その旨ご連絡申し上げますが、 所定の期間内にお支払いいただけない場合は開示等の求めがなかったものといたします。<br>\nなお、送付頂いた書類は原則としてご返却いたしません。"
+            }
+          },
+          "cf164cf1-93c9-4019-ab21-fc659ce04c36": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "Cookieの使用について",
+              "privacy-text-field": "Cookieとは、ウェブサーバからお客様のブラウザ、ハードディスクに小さなファイルデータを送信し、 お客様の訪問履歴などの内容を参照することができる機能です。 当社は、Webサイトのアクセス性・利便性を向上させる目的でCookieを使用し、 閲覧状況などの情報を収集する場合がありますが、このデータは氏名や生年月日など、 利用者個人を特定・追跡するものではありません。Cookieの使用を希望されない場合は、 お客様のブラウザでいつでも設定を変更することが可能です。 Cookieを有効または無効にする手順については、 ブラウザにて異なります。お使いのブラウザの“ヘルプ”メニューよりご確認ください。"
+            }
+          },
+          "f634afe4-47e6-4679-a995-9bce52b7f2e8": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "Cookieおよび<br>ユーザー行動情報の取得について",
+              "privacy-text-field": "当社では、Webサイトおよびサービスの改善向上を目的として、第三者企業が提供するアクセス解析ツールや広告分析ツールなどを導入しております。 これらのツールはCookieを利用し、お客様のサイト利用状況の計測や、広告の表示回数やクリック数の測定、 お客様に合わせたコンテンツや広告の表示、ソーシャルメディア機能の提供を行っております。 また、計測したデータはデータ解析や広告配信、ソーシャルメディアの第三者企業に提供しております。 Cookieはお客様のブラウザを識別することはできますが、お客様個人を特定することはできません。"
+            }
+          },
+          "64eed8ca-cff0-43d8-a6f7-edc73530c597": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "Google Analyticsの利用について",
+              "privacy-text-field": "当社は、お客様の動向を調査する目的でGoogleによるアクセス解析ツール「Google Analytics」、<br> 「Google Search Console」を使用します。これらはアクセス情報の収集のためにCookieを使用しておりますが、 このアクセス情報は匿名で収集されており、個人を特定するものではありません。 この機能はCookieを無効にすることで収集を拒否することができますので、 お使いのブラウザの設定をご確認ください。 この規約に関して、詳しくはGoogle社のプライバシーポリシーからご確認ください。"
+            }
+          },
+          "e6725902-00b8-4b06-880b-21c803870057": {
+            "type": "privacy-text",
+            "settings": {
+              "privacy-text-title": "個人情報に関する問い合わせ先",
+              "privacy-text-field": "個人情報に関するご相談、お問い合わせ等につきましては、下記までご連絡ください。<br>\nお問い合わせフォーム"
+            }
+          }
+        },
+        "block_order": [
+          "9193eee0-fd00-4c50-a668-bf9ac6c31752",
+          "06d8cf6d-109d-44cc-a863-90cba9459aae",
+          "5f9faed9-1908-4ff9-8991-be04a58064c8",
+          "69772f58-6980-4f3b-8eb6-bf89ac1eb18a",
+          "cf164cf1-93c9-4019-ab21-fc659ce04c36",
+          "f634afe4-47e6-4679-a995-9bce52b7f2e8",
+          "64eed8ca-cff0-43d8-a6f7-edc73530c597",
+          "e6725902-00b8-4b06-880b-21c803870057"
+        ],
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "color_schemes": {
+      "background-1": {
+        "settings": {
+          "background": "#f1ede8",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "background-2": {
+        "settings": {
+          "background": "#4cff00",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#f3f3f3",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "inverse": {
+        "settings": {
+          "background": "#242833",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "accent-1": {
+        "settings": {
+          "background": "#121212",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "accent-2": {
+        "settings": {
+          "background": "#334fb4",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-b7fd4a22-af4a-4955-9d14-ad4fcc4edf22": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "logo_width": 90,
+      "color_schemes": {
+        "background-1": {
+          "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "background-2": {
+          "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
+          }
+        },
+        "inverse": {
+          "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "accent-1": {
+          "settings": {
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "accent-2": {
+          "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        }
+      },
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "background-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "background-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "background-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 0,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "accent-2",
+      "sold_out_badge_color_scheme": "inverse",
+      "brand_headline": "",
+      "brand_description": "<p><\/p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "background-1"
+          }
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
+  }
+}

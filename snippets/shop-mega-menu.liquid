@@ -1,0 +1,33 @@
+<div id="shopMegaMenu" class="shopMegaMenu-hide">
+  <div class="shopMegaMenu--wrap">
+      <div class="shopMegaMenu--cont"> 
+          <ul class="catList">
+            {%- for collection in collections -%}
+              <li>
+                {%- if collection.image -%}
+                  {%- assign collection_image = collection.image -%}
+                {%- elsif collection.products.first and collection.products.first.images != empty -%}
+                  {%- assign collection_image = collection.products.first.featured_image -%}
+                {%- else -%}
+                  {%- assign collection_image = blank -%}
+                {%- endif -%}
+                  <a href="{{ collection.url }}">
+                      <div>
+                          <figure>
+                            <img
+                                src="{{ collection_image | img_url: '480x' }}"
+                                alt="Image"
+                                width=""
+                                height=""
+                                loading="lazy"
+                              >
+                          </figure>
+                          <h2>{{ collection.title }}</h2>
+                      </div>
+                  </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+      </div>
+  </div>
+</div>

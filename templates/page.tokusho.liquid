@@ -1,0 +1,9 @@
+{{ 'page-tokusho.css' | asset_url | stylesheet_tag }}
+<div class="Tokusho-Page">
+  <section class="section01">
+    <div class="section01--wrap">
+      <h2 class="Tokusho-Page--title">特定商取引法に関する表記</h2>
+          {% section 'custom-tokusho-list' %}
+    </div>
+  </section>
+</div>

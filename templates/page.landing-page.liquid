@@ -1,0 +1,186 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+
+<div class="top_LP">
+    <section class="section01">
+        <div class="section01--wrap">
+            <div class="sect01_flex">
+                <div class="sect01_flex--item">
+                    <figure>
+                        <img
+                            src="{{ 'lp_sect01_img01.png' | asset_url }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                </div>
+                <div class="sect01_flex--item">
+                    <figure>
+                        <img
+                            src="{{ 'august_logo.png' | asset_url }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                    <h2>August proposes traditional and<br>
+                    orthodox beautiful silhouette designs <br>
+                    created with luxurious materials<br>
+                    in noble colors as daily luxury.</h2>
+                    <a href="" class="btn--link btn--link__center">
+                        <span>SHOP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section02"> 
+        <div class="section02--wrap">
+            <h3 class="section02--ttl">CATEGORY</h3>
+            <div class="section02--cont"> 
+                <ul class="catList">
+                  {%- for collection in collections -%}
+                    <li>
+                      {%- if collection.image -%}
+                        {%- assign collection_image = collection.image -%}
+                      {%- elsif collection.products.first and collection.products.first.images != empty -%}
+                        {%- assign collection_image = collection.products.first.featured_image -%}
+                      {%- else -%}
+                        {%- assign collection_image = blank -%}
+                      {%- endif -%}
+                        <a href="{{ collection.url }}">
+                            <div>
+                                <figure>
+                                  <img
+                                      src="{{ collection_image | img_url: '480x' }}"
+                                      alt="Image"
+                                      width=""
+                                      height=""
+                                      loading="lazy"
+                                    >
+                                </figure>
+                                <h2>{{ collection.title }}</h2>
+                            </div>
+                        </a>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section03">
+        <div class="section03--wrap">
+            <div class="section03--cont">
+                <div class="textWrap">
+                    <h3>SPRING/SUMMER<br>2023</h3>
+                    <figure>
+                        <img
+                            src="{{ 'lp_sect03_img01.png' | asset_url }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                    <a href="" class="btn--link btn--link__center">
+                        <span>SHOP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% section 'featured-collection' %}
+    <section class="section05">
+        <div class="section05__wrap">
+            <p class="section05__title">CONCEPT</p>
+            <div class="l-container">
+                <div class="sect05-bg">
+                    <img 
+                      src="{{ 'lp_sect05_img01.jpg' | asset_url }}"
+                      alt="Image"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    >
+                </div>
+                <figure>
+                    <img src="{{ 'august_logo.png' | asset_url }}" alt="Image" width="" height="" loading="lazy" />
+                </figure>
+                <p class="desc">
+                オーガストは、贅沢な素材でつくる、<br class="sp" />伝統的であり正統派な美しい<br />
+                シルエットデザインをノーブルカラーに彩り、<br class="sp" />デイリーラグジュアリーとしてご提案します。
+                </p>
+                <a href="" class="btn--link btn--link__center">
+                    <span>VIEW</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section06">
+      <div class="section06--wrap">
+        <div class="section06--container">
+          <div class="section06_flex">
+            <div class="section06_flex--item">
+              <figure>
+                <img 
+                  src="{{ 'lp_sect06_img01.png' | asset_url }}"
+                  alt="Image"
+                  width=""
+                  height=""
+                  loading="lazy"
+                >
+              </figure>
+            </div>
+            <div class="section06_flex--item">
+              <h3>ON SALE ITEMS</h3>
+              <p>
+                オーガストは、贅沢な素材でつくる、<br />
+                伝統的であり正統派な美しいシルエットデザインをノーブルカラーに彩り、<br />
+                デイリーラグジュアリーとしてご提案します。.
+              </p>
+              <a href="" class="btn--link btn--link__left">
+                <span>VIEW</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section07">
+        <div class="section07--wrap">
+            <div class="section07--floattop">
+                <h3>DESIGNER’S<br class="sp"> COLUMN</h3>
+            </div>
+            <div class="section07--container">
+                <ul class="columnFlex">
+                  {% for article in blogs['news'].articles %}
+                    <li class="columnFlex--item">
+                        <a href="{{ article.url }}">
+                            <div>
+                                <figure>
+                                  <img 
+                                    src="{{ article.image.src | img_url: 'medium' }}"
+                                    alt="Image"
+                                    width=""
+                                    height=""
+                                    loading="lazy"
+                                  >
+                                </figure>
+                                <h3>{{ article.title }}</h3>
+                                <span>{{ article.published_at | date: "%Y-%m-%d" }}</span>
+                            </div>
+                        </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+            </div>
+            <div class="section07--floatbtm">
+                <a href="" class="btn--link btn--link__center">
+                    <span>MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

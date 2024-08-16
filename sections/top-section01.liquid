@@ -1,0 +1,52 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+
+<div class="top_LP">
+    <section class="section01">
+        <div class="section01--wrap">
+            <div class="sect01_flex">
+                <div class="sect01_flex--item">
+                    <figure>
+                        <img
+                            src="{{ 'lp_sect01_img01.png' | asset_url }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                </div>
+                <div class="sect01_flex--item">
+                    <figure>
+                        <img
+                            src="{{ 'august_logo.png' | asset_url }}"
+                            alt="Image"
+                            width=""
+                            height=""
+                            loading="lazy"
+                          >
+                    </figure>
+                    <h2>August proposes traditional and<br>
+                    orthodox beautiful silhouette designs <br>
+                    created with luxurious materials<br>
+                    in noble colors as daily luxury.</h2>
+                    <a href="{{ 'collections/all' | url }}" class="btn--link btn--link__center">
+                        <span>SHOP</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+  {
+    "name": "Top Section 01",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

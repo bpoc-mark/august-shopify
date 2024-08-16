@@ -1,0 +1,113 @@
+{{ 'landing-page.css' | asset_url | stylesheet_tag }}
+<div class="top_LP">
+    <section class="section05">
+        <div class="section05__wrap">
+            <p class="section05__title">CONCEPT</p>
+            <div class="l-container">
+                <div class="sect05-bg">
+                    <img 
+                      src="{{ 'lp_sect05_img01.jpg' | asset_url }}"
+                      alt="Image"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    >
+                </div>
+                <figure>
+                    <img src="{{ 'august_logo.png' | asset_url }}" alt="Image" width="" height="" loading="lazy" />
+                </figure>
+                <p class="desc">
+                オーガストは、贅沢な素材でつくる、<br class="sp" />伝統的であり正統派な美しい<br />
+                シルエットデザインをノーブルカラーに彩り、<br class="sp" />デイリーラグジュアリーとしてご提案します。
+                </p>
+                <a href="{{ '/pages/concept' | link }}" class="btn--link btn--link__center">
+                    <span>VIEW</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section06">
+      <div class="section06--wrap">
+        <div class="section06--container">
+          <div class="section06_flex">
+            <div class="section06_flex--item">
+              <figure>
+                <img 
+                  src="{{ 'lp_sect06_img01.png' | asset_url }}"
+                  alt="Image"
+                  width=""
+                  height=""
+                  loading="lazy"
+                >
+              </figure>
+            </div>
+            <div class="section06_flex--item">
+              <h3>ON SALE ITEMS</h3>
+              <p>
+                オーガストは、贅沢な素材でつくる、<br />
+                伝統的であり正統派な美しいシルエットデザインをノーブルカラーに彩り、<br />
+                デイリーラグジュアリーとしてご提案します。.
+              </p>
+              <a href="{{ '/collections/all' | link }}" class="btn--link btn--link__left">
+                <span>VIEW</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section07">
+        <div class="section07--wrap">
+            <div class="section07--floattop">
+                <h3>DESIGNER’S<br class="sp"> COLUMN</h3>
+            </div>
+            <div class="section07--container">
+                <ul class="columnFlex">
+                  {% assign counter = 0 %}
+                  {% for article in blogs['news'].articles %}
+                    {% if counter < 3 %}
+                        <li class="columnFlex--item">
+                          <a href="{{ article.url }}">
+                            <div>
+                              <figure>
+                                <img 
+                                  src="{{ article.image.src | img_url: 'medium' }}"
+                                  alt="Image"
+                                  width=""
+                                  height=""
+                                  loading="lazy"
+                                >
+                              </figure>
+                              <h3>{{ article.title }}</h3>
+                              <span>{{ article.published_at | date: "%Y-%m-%d" }}</span>
+                            </div>
+                          </a>
+                        </li>
+                        {% assign counter = counter | plus: 1 %}
+                      {% else %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+            </div>
+            <div class="section07--floatbtm">
+                <a href="{{ '/blogs/news' | link }}" class="btn--link btn--link__center">
+                    <span>MORE</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% schema %}
+  {
+    "name": "LP Bottom Part",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "top-section01": {
+      "type": "top-section01",
+      "settings": {
+      }
+    },
+    "top-section02": {
+      "type": "top-section02",
+      "settings": {
+      }
+    },
+    "top-section03": {
+      "type": "top-section03",
+      "settings": {
+        "header": "SPRING\/SUMMER<br>2023",
+        "link": "",
+        "image": "shopify:\/\/shop_images\/lp_sect03_img01.png"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-family: ivymode, sans-serif; font-size: 4rem; text-align: center; position: absolute; top: -25px; left: 0; text-align: center; width: 100%;}"
+      ],
+      "settings": {
+        "title": "PICK UP ITEM",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-b7fd4a22-af4a-4955-9d14-ad4fcc4edf22",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "top-section05": {
+      "type": "top-section05",
+      "settings": {
+      }
+    },
+    "top-section06": {
+      "type": "top-section06",
+      "settings": {
+        "header": "",
+        "link": "",
+        "image": "shopify:\/\/shop_images\/lp_sect03_img01.png"
+      }
+    },
+    "top-section07": {
+      "type": "top-section07",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "top-section01",
+    "top-section02",
+    "top-section03",
+    "featured_collection",
+    "top-section05",
+    "top-section06",
+    "top-section07"
+  ]
+}
