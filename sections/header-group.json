@@ -1,10 +1,18 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -17,6 +25,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": true,
@@ -27,11 +36,11 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header-wrapper--border-bottom {border-bottom: 0.1rem solid #000;}",
-        "@media screen and (min-width: 990px) {.header {padding-bottom: 0; } .header nav ul li {margin: 0 15px; } .header nav ul li a{font-size: 12px; }}"
+        ".header-wrapper--border-bottom {border-bottom: 0.1rem solid #fff;}",
+        "@media screen and (min-width: 990px) {.header {padding-bottom: 0; } .header nav ul li a {font-size: 12px; }}"
       ],
       "settings": {
-        "logo_position": "top-center",
+        "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
@@ -42,7 +51,8 @@
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
-        "padding_bottom": 20
+        "padding_bottom": 20,
+        "show_social": false
       }
     }
   },
