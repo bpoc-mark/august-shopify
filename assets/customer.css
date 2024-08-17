@@ -1,6 +1,6 @@
 .customer:not(.account):not(.order) {
   margin: 0 auto;
-  max-width: 33.4rem;
+  max-width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   text-align: center;
@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 95rem;
   }
 }
 
@@ -20,6 +20,25 @@
 }
 .customer > h1 {
   margin-bottom: unset;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.customer .addresses-back-wrap{
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.customer .addresses-back-wrap a{
+  font-size: 1.2rem;
+  color: #A3A3A3;
+}
+.customer div[data-address] {
+  text-align: left;
+}
+.customer div[data-address] button {
+  width: 25rem;
+  min-height: calc(4.5rem + var(--buttons-border-width)* 2);
+  border-radius: 50px;
+  text-decoration: none;
 }
 .customer__page-title {
     font-family: ivymode,sans-serif;
@@ -40,6 +59,14 @@
 
 .customer button {
   margin: 4rem 0 1.5rem;
+  min-width: auto;
+  min-height: auto;
+  padding: 0;
+  border: none;
+  --border-opacity: unset;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 1.2rem;
 }
 
 .customer ul {
@@ -783,6 +810,7 @@
 }
 .addresses form button[type] {
   width: 100%;
+  border: 1px solid;
 }
 .addresses form .field, addresses form .select {
   z-index:2;
@@ -792,7 +820,6 @@
 .addresses form .field input, .addresses form .select select{
   background-color: #FFFFFF;
   font-size: 12px;
-  border: unset !important;
 }
 .addresses form .select:before, .addresses form .select:after{
   display:none;
@@ -850,10 +877,21 @@ label[for='AddressProvinceNew'] {
   list-style: none;
   padding-left: 0;
   text-align: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 750px) {
+  .addresses ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+  }
 }
 
 li[data-address] {
   margin-top: 5rem;
+  text-align: left;
 }
 
 .addresses [aria-expanded='false'] ~ div[id] {
@@ -870,13 +908,18 @@ li[data-address] {
 
 li[data-address] > h2 {
   text-align: center;
-  font-size: calc(var(--font-heading-scale) * 1.8rem);
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
   margin-bottom: 0;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  color: #a3a3a3;
+  padding-bottom: .8rem;
+  margin-bottom: 2.5rem;
 }
 
 @media only screen and (min-width: 750px) {
   li[data-address] > h2 {
-    font-size: calc(var(--font-heading-scale) * 2.2rem);
+    font-size: calc(var(--font-heading-scale) * 1.2rem);
   }
 }
 
@@ -1030,6 +1073,7 @@ li[data-address] > h2 {
   margin: unset;
   left: 0;
   color: #000000;
+  display: none;
 }
 #shopify-section-template--19675101921553__main .addresses .addresses-back {
   font-size: 12px;
@@ -1058,17 +1102,22 @@ li[data-address] > h2 {
 }
 .EditAddress-container {
   margin: 0 auto;
-  background-color: #FAF8F5;
-  border-radius: 30px;
-  max-width: 1166px;
+  background-color: #fff;
+  max-width: 1166px;  
   position: relative;
 }
 .EditAddress-wrap div button:first-of-type {
-  background-color: #CCC1AD !important;
+  background-color: #000 !important;
+  min-height: calc(4.5rem + var(--buttons-border-width)* 2);
+  border-radius: 50px;
+  text-decoration: none;
 }
 .EditAddress-wrap div button:nth-of-type(2) {
   background-color: unset !important;
-  border: 1px solid #CCC1AD;
+  border: 1px solid #000;
+  min-height: calc(4.5rem + var(--buttons-border-width)* 2);
+  border-radius: 50px;
+  text-decoration: none;
 }
 #AddAddress {
   position: fixed !important;
@@ -1083,8 +1132,7 @@ li[data-address] > h2 {
 }
 .AddAddress-wrap {
   margin: 0 auto;
-  background-color: #FAF8F5;
-  border-radius: 30px;
+  background-color: #fff;
   max-width: 1166px;
   position: relative;
 }
@@ -1126,7 +1174,7 @@ li[data-address] > h2 {
 }
 .fill-up {
   text-align: center;
-  border-bottom: 1px solid #CCC1AD;
+  border-bottom: 1px solid #000;
   font-size: 12px;
   letter-spacing: 1.2px;
   padding-bottom: 45px;
