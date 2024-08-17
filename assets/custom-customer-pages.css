@@ -77,7 +77,7 @@
 
 .page-Contact form .contact__button button,
 .page-Contact form button {
-    min-width: 100%;
+    min-width: 50%;
     background-color: #000;
     border-radius: 24px;
     color: #fff;
