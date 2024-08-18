@@ -7,13 +7,17 @@
   padding-top: 40px;
 }
 
+.customer.addresses  {
+  max-width: 95rem !important;
+}
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 95rem;
-    padding-top: 75px;
+    max-width: 47.8rem;
+  }
+  .customer.addresses  {
+    padding-top: 7.5rem !important;
   }
 }
-
 .customer > h1,
 .customer__title {
   margin-top: 0;
@@ -42,6 +46,14 @@
   border-radius: 50px;
   text-decoration: none;
 }
+.customer div[data-address] button::before,
+.customer div[data-address] button::after {
+  border-radius: 50px !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .customer__page-title {
     font-family: ivymode,sans-serif;
     font-size: 4rem;
@@ -62,12 +74,8 @@
 .customer button {
   margin: 4rem 0 1.5rem;
   min-width: auto;
-  min-height: auto;
   padding: 0;
   border: none;
-  --border-opacity: unset;
-  text-decoration: underline;
-  text-underline-offset: 2px;
   font-size: 1.2rem;
 }
 
@@ -801,6 +809,10 @@
 .addresses li > button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  --border-opacity: unset;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  min-height: auto;
 }
 
 .addresses li > button + button,
@@ -1130,6 +1142,14 @@ li[data-address] > h2 {
   min-height: calc(4.5rem + var(--buttons-border-width)* 2);
   border-radius: 50px;
   text-decoration: none;
+}
+.EditAddress-wrap div button::before,
+.EditAddress-wrap div button::after{
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 #AddAddress {
   position: fixed !important;
