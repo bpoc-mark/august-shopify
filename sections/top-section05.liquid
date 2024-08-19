@@ -2,23 +2,29 @@
 <div class="top_LP">
     <section class="section05">
         <div class="section05__wrap">
-            <p class="section05__title">CONCEPT</p>
             <div class="l-container">
                 <div class="sect05-bg">
                     <img 
-                      src="{{ 'lp_sect05_img01.jpg' | asset_url }}"
+                      src="{{ 'lp_sect05_img01.png' | asset_url }}"
                       alt="Image"
                       width=""
                       height=""
                       loading="lazy"
                     >
                 </div>
-                <figure>
-                    <img src="{{ 'august_logo.png' | asset_url }}" alt="Image" width="" height="" loading="lazy" />
+                <p class="section05__title">CONCEPT</p>
+               <figure>
+                    <img 
+                        src="{{ 'august_logoW.png' | asset_url }}" 
+                        srcset="{{ 'august_logo.png' | asset_url }} 899w, {{ 'august_logoW.png' | asset_url }} 1200w" 
+                        alt="Image" 
+                        width="" 
+                        height="" 
+                        loading="lazy" 
+                        sizes="(max-width: 899px) 100vw, 50vw" 
+                    />
                 </figure>
-                <p class="desc">
-                オーガストは、贅沢な素材でつくる、<br class="sp" />伝統的であり正統派な美しい<br />
-                シルエットデザインをノーブルカラーに彩り、<br class="sp" />デイリーラグジュアリーとしてご提案します。
+                <p class="desc">オーガストは、贅沢な素材でつくる、伝統的であり正統派な美しい シルエットデザインをノーブルカラーに彩り、デイリーラグジュアリーとしてご提案します。
                 </p>
                 <a href="{{ '/pages/concept' | link }}" class="btn--link btn--link__center">
                     <span>VIEW</span>
