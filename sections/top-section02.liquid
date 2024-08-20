@@ -6,25 +6,30 @@
     overflow: hidden;
   }
   
-  .lpCollection .lpCollection--wrap {
+  {% comment %}.lpCollection .lpCollection--wrap {
     max-width: 1160px;
     margin: 0 auto;
     padding: 150px 35px 160px;
+  }{% endcomment %}
+  .lpCollection .lpCollection--wrap {
+    margin: 0 auto;
+    padding: 100px 0 130px;
   }
   
   .lpCollection .lpCollection--ttl {
-    font-family: ivymode, sans-serif;
-    font-size: 150px;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 10px;
+    letter-spacing: 1px;
     font-weight: 300;
-    color: #fff;
-    text-align: right;
-    margin-bottom: 60px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px;
     margin-top: 0;
   }
   @media only screen and (min-width: 990px) {
-    .lpCollection .lpCollection--cont .catList li:nth-child(even){
+    {% comment %}.lpCollection .lpCollection--cont .catList li:nth-child(even){
       margin-top: 100px;
-    }
+    }{% endcomment %}
     .lpCollection .lpCollection--cont .catList li:nth-child(odd)::before{
       left: 20px;
       top: -30px;
@@ -38,20 +43,25 @@
   }
   @media only screen and (max-width: 989px) {
     .lpCollection .lpCollection--wrap {
-      padding: 115px 0 0px;
+      padding: 30px 0 80px;
     }
+    {% comment %}
     .lpCollection .lpCollection--ttl {
       font-size: 55px;
       margin-bottom: 35px;
       padding-right: 20px;
       margin-bottom: 35px;
     }
+    {% endcomment %}
     .lpCollection .lpCollection--cont .small-hide{
       display: none;
     }
-    .lpCollection .lpCollection--cont .collectionSwiper{
-      padding-right: 20px;
-      padding-left: 50px;
+    .lpCollection .lpCollection--cont .collectionSwiper .catList{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .lpCollection .lpCollection--cont .collectionSwiper .catList li{
+      width: calc(100% / 2);
     }
     .lpCollection .lpCollection--cont .catList li::before{
       left: 20px;
@@ -105,8 +115,8 @@
                     </li>
                   {%- endfor -%}
                 </ul>
-                <div class="swiper collectionSwiper">
-                  <ul class="swiper-wrapper catList">
+                <div class="collectionSwiper">
+                  <ul class="catList">
                     {%- for collection in collections -%}
                       <li class="swiper-slide">
                         {% comment %}
