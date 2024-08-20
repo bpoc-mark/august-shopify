@@ -15,16 +15,25 @@
 {%- endif -%}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+    {% comment %}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    {% endcomment %}
+    
+    .section-{{ section.id }}-padding {
+      padding-top: {{ 50 }}px;
+      padding-bottom: {{ 50 }}px;
+    }
 
   @media screen and (min-width: 750px) {
+    {% comment %}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+    {% endcomment %}
   }
 {%- endstyle -%}
 
