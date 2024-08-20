@@ -51,6 +51,8 @@
   display: flex;
   position: relative;
   margin: 0;
+  max-height: 513px;
+  overflow: hidden;
   /* border-radius: 132px;
   overflow: hidden; */
 }
