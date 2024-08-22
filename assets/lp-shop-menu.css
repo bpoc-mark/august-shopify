@@ -1,16 +1,16 @@
-#shopMegaMenu{
+#shopMegaMenu {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 10;
   width: 100%;
   height: calc(100% - 115px);
-  background: #DED5CC;
+  background: #ded5cc;
 }
-#shopMegaMenu.shopMegaMenu-hide{
+#shopMegaMenu.shopMegaMenu-hide {
   display: none;
 }
-#shopMegaMenu .shopMegaMenu--cont{
+#shopMegaMenu .shopMegaMenu--cont {
   max-width: 1280px;
   margin: 0 auto;
   padding: 60px 80px;
@@ -22,12 +22,12 @@
   list-style: none;
   counter-reset: css-counter 0;
 }
-  
+
 .catList li {
   counter-increment: css-counter 1;
 }
 
-.catList li::before{
+/* .catList li::before{
   content: "0"counter(css-counter);
   font-family: ivymode, sans-serif;
   font-size: 80px;
@@ -38,7 +38,7 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
-}
+} */
 
 .catList li a {
   text-decoration: none;
@@ -50,9 +50,11 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin: 0 0 43px 0;
-  border-radius: 132px;
+  margin: 0;
+  max-height: 513px;
   overflow: hidden;
+  /* border-radius: 132px;
+  overflow: hidden; */
 }
 
 .catList li img {
@@ -60,15 +62,16 @@
   height: 100%;
   aspect-ratio: 1/1.5;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .catList li h2 {
   text-align: center;
-  font-family: ivymode, sans-serif;
-  font-size: 25px;
-  letter-spacing: 2.5px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-size: 10px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 20px;
 }
 
 @media only screen and (min-width: 990px) {
@@ -78,25 +81,25 @@
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0 -15px;
     counter-reset: css-counter 0;
   }
-  
+
   .catList li {
-    width: calc(100% / 4);
-    padding: 0 15px;
+    width: calc(100% / 3);
+    /* padding: 0 15px; */
     position: relative;
     counter-increment: css-counter 1;
   }
 
-  .collectionSwiper{
+  .collectionSwiper {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 989px) {
-  #shopMegaMenu{ {
+  #shopMegaMenu {
     display: none;
   }
 }
