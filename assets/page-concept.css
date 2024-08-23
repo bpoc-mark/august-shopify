@@ -1,5 +1,5 @@
 .Concept-Page--content {
-  background-color: #f1ede8;
+  background-color: #ffffff;
 }
 .Concept-Page .section01 {
   position: relative;
@@ -118,8 +118,8 @@
 .Concept-Page .section02 {
   position: relative;
   overflow: hidden;
-  margin-top: 31.968vw;
-  margin-bottom: 300px;
+  /* margin-top: 31.968vw; */
+  margin-bottom: 100px;
 }
 .Concept-Page .section02 span {
   position: absolute;
@@ -138,21 +138,48 @@
   font-weight: 100;
 }
 .Concept-Page .section02--title {
-  font-size: 125px;
-  color: #ffffff;
+  font-size: 10px;
+  color: #000000;
   width: 100%;
   text-align: center;
-  font-family: ivymode, sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN";
   font-weight: 100;
   margin: 0;
+  letter-spacing: 1px;
 }
 .Concept-Page .section02--content {
-  max-width: 1366px;
-  padding: 0 100px;
-  margin: 0 auto;
+  /* max-width: 1366px; */
+  /* padding: 0 100px; */
+  /* margin: 0 auto; */
   display: flex;
   position: relative;
-  margin-top: 192px;
+  /* margin-top: 192px; */
+}
+.Concept-Page .section02--content .left--image {
+  width: 50%;
+  margin: 0 !important;
+  overflow: hidden;
+}
+.Concept-Page .section02--content .left--image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.Concept-Page .section02--content .right--desc {
+  width: 50%;
+  max-width: 442px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+  justify-content: center;
+}
+.Concept-Page .section02--content .right--desc p {
+  font-size: 10px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 .Concept-Page .section02--content .august {
   position: absolute;
@@ -204,6 +231,9 @@
   line-height: 30px;
   font-weight: 100;
 }
+.Concept-Page .section03--base {
+  position: relative;
+}
 .Concept-Page .section03--base picture {
   margin: 0;
   height: 431px;
@@ -218,15 +248,25 @@
   max-width: 1366px;
   padding: 0 100px;
   margin-top: -149px;
-  padding-bottom: 200px;
+  padding-bottom: 190px;
+  margin: 0 auto;
 }
-.Concept-Page .section03--wrap p {
-  font-size: 12px;
-  line-height: 28px;
-  letter-spacing: 1.2px;
+.Concept-Page .section03--base__img .p1 {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-weight: normal;
+}
+.Concept-Page .section03--wrap .p2 {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 1px;
   max-width: 390px;
-  margin-left: 100px;
-  font-weight: 100;
+  margin: 0 auto;
+  font-family: "Hiragino Kaku Gothic ProN";
+  font-weight: normal;
 }
 .shopify-section-group-header-group {
   z-index: 10 !important;
@@ -245,11 +285,11 @@
     display: none;
   }
 }
-@media only screen and (max-width: 1367px) {
+/* @media only screen and (max-width: 1367px) {
   .Concept-Page .section02 {
     margin-top: 28vw;
   }
-}
+} */
 @media only screen and (max-width: 1366px) {
   .pc-only-bigger {
     display: none !important;
@@ -300,6 +340,19 @@
   }
 }
 @media only screen and (max-width: 899px) {
+  .Concept-Page .section02--content {
+    flex-direction: column;
+  }
+  .Concept-Page .section02--content .right--desc,
+  .Concept-Page .section02--content .left--image {
+    width: 100%;
+  }
+  .Concept-Page .section02--title {
+    padding: 40px 0 38px;
+  }
+  .Concept-Page .section02--content .left--image {
+    padding: 50px 0 0 40px;
+  }
   .Concept-Page .section01 .txt-sp .p-small {
     padding-top: 16px;
   }
@@ -309,13 +362,13 @@
   .pc-only {
     display: none !important;
   }
-  .Concept-Page .section02--title {
+  /* .Concept-Page .section02--title {
     font-size: 55px;
     line-height: 50px !important;
     margin-bottom: 55px;
     margin-top: 0;
     font-weight: 100;
-  }
+  } */
   .Concept-Page .section02--content .august {
     top: unset;
     bottom: 0;
@@ -327,16 +380,19 @@
     width: 100%;
     padding: 0 100px;
   }
-  .Concept-Page .section02--content {
+  /* .Concept-Page .section02--content {
     padding-bottom: 18px;
     margin-top: 25px;
-  }
-  .Concept-Page .section02 {
+  } */
+  /* .Concept-Page .section02 {
     margin-top: 139px;
     margin-bottom: 157px;
+  } */
+  .Concept-Page .section02 {
+    margin-bottom: 40px;
   }
   .section03--wrap {
-    padding: 0 30px !important;
+    padding: 0 20px !important;
     margin-top: 40px !important;
   }
   .section03--wrap p {
@@ -344,11 +400,15 @@
     margin-left: unset !important;
   }
   .Concept-Page .section03--base picture img {
-    padding-left: 30px;
+    padding-right: 30px;
     height: 460px !important;
   }
   .section03 {
-    padding-bottom: 140px;
+    padding-bottom: 100px;
+  }
+
+  .Concept-Page .section03--base__img .p1 {
+    padding-top: 30px;
   }
 }
 @media only screen and (min-width: 426px) {
@@ -378,6 +438,24 @@
 
   .top_LP .section01--wrap .sect01_flex--item:last-child {
     padding: 0 20px;
+  }
+  .Concept-Page .section03--base__img .p1 {
+    position: absolute;
+    max-width: 390px;
+    left: -221px;
+    top: 100px;
+    margin: 0;
+    max-width: 390px;
+  }
+  .Concept-Page .section03--wrap .p2 {
+    padding-top: 100px;
+  }
+
+  .Concept-Page .section03--base__img {
+    max-width: 683px;
+    margin: 0 auto;
+    width: 50.732vw;
+    position: relative;
   }
 }
 @media only screen and (max-width: 1366px) {
