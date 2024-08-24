@@ -24,6 +24,11 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 -%}
+<h1 class="collection-hero__title">
+  <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+  Shop
+  {% comment %}{{- collection.title | escape -}}{% endcomment %}
+</h1>
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}

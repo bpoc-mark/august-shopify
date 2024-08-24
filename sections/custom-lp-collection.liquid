@@ -6,30 +6,41 @@
   }
   
   .lpCollection .lpCollection--wrap {
+    {% comment %}
     max-width: 1160px;
-    margin: 0 auto;
     padding: 30px 35px 250px;
+    {% endcomment %}
+    margin: 0 auto 148px;
   }
   
   .lpCollection .lpCollection--ttl {
-    font-family: ivymode, sans-serif;
-    font-size: 150px;
-    font-weight: 300;
-    color: #CCC1AD;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 10px;
+    font-weight: 400;
+    color: #000000;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     margin-top: 0;
+    text-align: center;
+    letter-spacing: 1px;
   }
 
   @media only screen and (max-width: 989px) {
-    .lpCollection .lpCollection--wrap {
+    /* .lpCollection .lpCollection--wrap {
       padding: 30px 0 130px;
-    }
-    .lpCollection .lpCollection--ttl {
+    } */
+    /* .lpCollection .lpCollection--ttl {
       font-size: 55px;
       margin-bottom: 35px;
       padding-left: 20px;
       margin-bottom: 80px;
+    } */
+    .lpCollection .lpCollection--wrap {
+      {% comment %}
+      max-width: 1160px;
+      padding: 30px 35px 250px;
+      {% endcomment %}
+      margin: 0 auto 70px;
     }
     .lpCollection .lpCollection--cont .small-hide{
       display: none;
@@ -43,6 +54,13 @@
       top: -35px;
       bottom: initial;
     }
+    .catList li {
+      width: 50%;
+    }
+    .catList {      
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 </style>
 
@@ -50,7 +68,7 @@
     <div class="lpCollection--wrap">
         <h3 class="lpCollection--ttl">CATEGORY</h3>
         <div class="lpCollection--cont"> 
-            <ul class="catList small-hide">
+            <ul class="catList">
               {%- for collection in collections -%}
                 <li>
                 {% comment %}
@@ -87,11 +105,12 @@
                 </li>
               {%- endfor -%}
             </ul>
+            
+                    {% comment %}
             <div class="swiper collectionSwiper">
               <ul class="swiper-wrapper catList">
                 {%- for collection in collections -%}
                   <li class="swiper-slide">
-                    {% comment %}
                       {% if collection.metafields.custom.collection_number %}
                         {% assign collectionNumber = collection.metafields.custom.collection_number %}
                         {% if collectionNumber.size == 1 %}
@@ -99,7 +118,6 @@
                         {% endif %}
                         <span>{{ collectionNumber }}</span>
                       {% endif %}
-                    {% endcomment %}
                   
                     {%- if collection.image -%}
                       {%- assign collection_image = collection.image -%}
@@ -126,6 +144,7 @@
                 {%- endfor -%}
               </ul>
             </div>
+                    {% endcomment %}
         </div>
     </div>
 </section>
