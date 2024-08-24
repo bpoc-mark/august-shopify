@@ -153,3 +153,13 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+
+{% comment %} THIS IS FOR BUY IT BUTTON  {% endcomment %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var paymentButton = document.querySelector('.shopify-payment-button__button');
+    if (paymentButton) {
+        paymentButton.innerText = "BUY IT NOW"; // 
+    }
+  });
+</script>
