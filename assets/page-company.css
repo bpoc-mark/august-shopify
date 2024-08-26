@@ -1,12 +1,11 @@
 
 .Company-Page {
-  background-color: #f1ede8;
+  background-color: #fff;
 }
 .Company-Page--title {
-  font-size: 150px;
-  font-weight: 100;
-  font-family: ivymode,sans-serif;
-  color: #ccc1ad;
+  font-size: 1.4rem;
+  color: #000;
+  text-align: center;
   margin: 0 0 65px;
 }
 .Company-Page-content {
@@ -23,7 +22,7 @@
   height: 100%;
 }
 .Company-Page .section01 {
-  padding: 70px 0 200px;
+  padding: 70px 0 150px;
 }
 .Company-Page .section01--wrap {
   max-width: 1366px;
@@ -35,7 +34,7 @@
   padding-left: 50px;
 }
 .Company-Page .company-details p {
-  border-bottom: 1px solid #ccc1ad;
+  border-bottom: 1px solid #000;
   font-size: 12px;
   letter-spacing: 1.2px;
   line-height: 70px;
@@ -70,7 +69,7 @@
     padding: 0 30px;
   }
   .Company-Page--title {
-    font-size: 55px;
+    font-size: 1.4rem;
   }
   .Company-Page .section01 {
     padding: 37px 0 150px;

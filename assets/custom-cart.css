@@ -8,7 +8,6 @@
 }
 #cart-page main > :nth-child(1) cart-items .title-wrapper-with-link h1{
   text-transform: uppercase;
-  font-family: ivymode,sans-serif;
   font-size: 2rem;
 }
 #cart-page main > :nth-child(1) cart-items .title-wrapper-with-link a{

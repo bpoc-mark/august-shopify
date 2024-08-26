@@ -11,6 +11,7 @@
   font-size: 12px;
   letter-spacing: 1.2px;
   padding-top: 10px;
+  text-align: left;
 }
 #NewsArchive ul {
   margin: 0 -22px;
@@ -78,9 +79,11 @@
   font-size: 12px !important;
   letter-spacing: 1.2px !important;
   font-family: hiragino-kaku-gothic-pron, sans-serif;
+  text-align: left;
 }
 .main-blog .article-card__info {
   font-size: 10px !important;
+  text-align: left;
 }
 #NewsArchive .blog-articles .article-card .card__information, .blog__posts .article-card .card__information {
   padding: 30px 0 !important;
@@ -92,7 +95,7 @@
   padding-bottom: 165px !important;
 }
 .main-blog h1{
-  color: #CCC1AD;
+  color: #000;
   font-weight: 100;
   text-transform: uppercase;
   font-size: 1.2rem;
