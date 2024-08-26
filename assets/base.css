@@ -3410,8 +3410,8 @@ details-disclosure > details {
 /* CUSTOM CSS FOR HEADER */
 .header-wrapper {
   background: transparent !important;
-  position: fixed;
-  width: 100%;
+  /* position: fixed; */
+  /* width: 100%; */
 }
 .shopify-section-header-sticky sticky-header{
   background: #fff !important;
