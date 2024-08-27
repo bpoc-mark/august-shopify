@@ -429,6 +429,7 @@
 }
 
 .top_LP .section05__wrap .l-container .sect05-bg {
+  display: flex;
   position: absolute;
   bottom: 0;
   left: 0;

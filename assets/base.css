@@ -2717,6 +2717,12 @@ details[open] > .header__submenu {
   .header--top-center .header__inline-menu > .list-menu--inline {
     justify-content: center;
   }
+  .list-menu--inline li {
+    font-family: adobe-garamond-pro, serif;
+    font-style: italic;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
 
   .header--middle-left .header__inline-menu {
     margin-left: 0;
@@ -3406,14 +3412,13 @@ details-disclosure > details {
   }
 }
 
-
 /* CUSTOM CSS FOR HEADER */
 .header-wrapper {
   background: transparent !important;
   /* position: fixed; */
   /* width: 100%; */
 }
-.shopify-section-header-sticky sticky-header{
+.shopify-section-header-sticky sticky-header {
   background: #fff !important;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
