@@ -1,36 +1,34 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "top-section01": {
       "type": "top-section01",
-      "settings": {
-      }
+      "settings": {}
     },
     "top-section02": {
       "type": "top-section02",
-      "settings": {
-      }
+      "settings": {}
     },
     "top-section03": {
       "type": "top-section03",
       "settings": {
         "header": "’23 AUGUST DRESS COLLECTION",
         "link": "",
-        "image": "shopify:\/\/shop_images\/Mask_Group_16.png"
+        "image": "shopify://shop_images/Mask_Group_16.png"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {font-family: \"Hiragino Kaku Gothic ProN\"; font-size: 10px; text-align: center; text-align: center; width: 100%; letter-spacing: 1px;}"
+        "h2 {font-family: adobe-garamond-pro, serif; font-size: 12px; font-style: italic; text-align: center; text-align: center; width: 100%; letter-spacing: 1.2px;}"
       ],
       "settings": {
         "title": "PICK UP ITEM",
@@ -60,18 +58,15 @@
     },
     "top-section05": {
       "type": "top-section05",
-      "settings": {
-      }
+      "settings": {}
     },
     "top-section06": {
       "type": "top-section06",
-      "settings": {
-      }
+      "settings": {}
     },
     "top-section07": {
       "type": "top-section07",
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
