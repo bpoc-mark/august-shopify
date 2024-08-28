@@ -1,9 +1,11 @@
-
 .Company-Page {
   background-color: #fff;
 }
 .Company-Page--title {
-  font-size: 1.4rem;
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
   color: #000;
   text-align: center;
   margin: 0 0 65px;
