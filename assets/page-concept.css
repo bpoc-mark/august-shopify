@@ -1,3 +1,6 @@
+.concept_M {
+  margin-top: -64px;
+}
 .Concept-Page--content {
   background-color: #ffffff;
 }
@@ -529,7 +532,7 @@
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .section05__wrap {
@@ -587,7 +590,7 @@
 }
 
 .section05__wrap .l-container .descPD {
-  margin: 40px auto 60px;
+  margin: 40px auto 44px;
 }
 .section05__wrap .btn--link {
   border: unset !important;
