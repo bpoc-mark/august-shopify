@@ -3,6 +3,9 @@
   overflow: hidden;
   position: relative;
 }
+.top_LP_M {
+  margin-top: -64px;
+}
 
 @media only screen and (min-width: 900px) {
   .top_LP .sp {
@@ -122,6 +125,9 @@
 }
 
 @media only screen and (max-width: 899px) {
+  .top_LP .section07--container {
+    padding: 0 20px !important;
+  }
   .responsive-img {
     content: url("{{ 'august_logo.png' | asset_url }}");
   }

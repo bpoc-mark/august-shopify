@@ -1127,12 +1127,13 @@ input.mobile-facets__checkbox {
   padding-top: 0;
 }
 .mColletction .facets-wrapper h1 {
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
   width: 52%;
   text-transform: uppercase;
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: normal;
   color: #000000;
   text-align: right;
 }

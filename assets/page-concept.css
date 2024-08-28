@@ -1,3 +1,6 @@
+.concept_M {
+  margin-top: -64px;
+}
 .Concept-Page--content {
   background-color: #ffffff;
 }
@@ -138,14 +141,16 @@
   font-weight: 100;
 }
 .Concept-Page .section02--title {
-  font-size: 10px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  padding-bottom: 33px;
   color: #000000;
   width: 100%;
   text-align: center;
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-weight: 100;
   margin: 0;
-  letter-spacing: 1px;
 }
 .Concept-Page .section02--content {
   /* max-width: 1366px; */
@@ -400,7 +405,7 @@
     margin-left: unset !important;
   }
   .Concept-Page .section03--base picture img {
-    padding-right: 30px;
+    padding-right: 40px;
     height: 460px !important;
   }
   .section03 {
@@ -519,14 +524,15 @@
   }
 }
 .section05__title {
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 10px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
   font-weight: normal;
-  font-style: normal;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .section05__wrap {
@@ -584,7 +590,7 @@
 }
 
 .section05__wrap .l-container .descPD {
-  margin: 40px auto 60px;
+  margin: 40px auto 44px;
 }
 .section05__wrap .btn--link {
   border: unset !important;

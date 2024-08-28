@@ -34,7 +34,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".header-wrapper--border-bottom {border-bottom: 0.1rem solid #fff;}",
+        ".header-wrapper--border-bottom {border-bottom: unset;}",
         "@media screen and (min-width: 990px) {.header {padding-bottom: 0; } .header nav ul li a {font-size: 12px; }}"
       ],
       "settings": {

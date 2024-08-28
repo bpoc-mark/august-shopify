@@ -1,6 +1,6 @@
 {{ 'page-concept.css' | asset_url | stylesheet_tag }}
 
-<div class="Concept-Page">
+<div class="Concept-Page concept_M">
     <div class="Concept-Page--content">
       <div class="section05__wrap">
             <div class="l-container">
@@ -13,8 +13,8 @@
                       loading="lazy"
                     >
                 </div>
-                <p class="section05__title">CONCEPT</p>
-               <figure>
+                <p class="section05__title">BRAND CONCEPT</p>
+               {% comment %} <figure>
                     <img 
                         src="{{ 'august_logoW.png' | asset_url }}" 
                         srcset="{{ 'august_logo.png' | asset_url }} 899w, {{ 'august_logoW.png' | asset_url }} 900w" 
@@ -22,7 +22,7 @@
                         loading="lazy" 
                         sizes="(max-width: 899px) 100vw, 50vw" 
                     />
-                </figure>
+                </figure> {% endcomment %}
                 <p class="desc descPD">AUGUSTは、 贅沢な素材でつくる、</br> 伝統的であり正統派な美しいシルエットデザインをノーブルカラーに彩り、 </br>デイリーラグジュアリーとしてご提案します。
                 </p>
                 <p class="desc">August proposes traditional and orthodox beautiful silhouette </br> designscreated with luxurious materials in noble colors as daily </br>luxury.

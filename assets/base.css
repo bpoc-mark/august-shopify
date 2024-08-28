@@ -73,6 +73,9 @@
 
 /* base */
 
+#MainContent {
+  padding-top: 64px;
+}
 .no-js:not(html) {
   display: none !important;
 }
