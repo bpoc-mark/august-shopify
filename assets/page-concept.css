@@ -138,14 +138,16 @@
   font-weight: 100;
 }
 .Concept-Page .section02--title {
-  font-size: 10px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  padding-bottom: 33px;
   color: #000000;
   width: 100%;
   text-align: center;
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-weight: 100;
   margin: 0;
-  letter-spacing: 1px;
 }
 .Concept-Page .section02--content {
   /* max-width: 1366px; */
@@ -519,10 +521,11 @@
   }
 }
 .section05__title {
-  font-family: "Hiragino Kaku Gothic ProN";
-  font-size: 10px;
+  font-family: adobe-garamond-pro, serif;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1.2px;
   font-weight: normal;
-  font-style: normal;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
