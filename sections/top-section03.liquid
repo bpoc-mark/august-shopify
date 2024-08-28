@@ -7,7 +7,8 @@
                 <div class="textWrap">
                     <h3>{{ section.settings.header }}</h3>
                     <div class="base02">
-                      <figure>
+                      <a href="{{ 'collections/23-dress-collection' | url }}" class="image_button">
+                        <figure>
                           <img
                               src="{{ section.settings.image | img_url: 'original' }}"
                               alt="Image"
@@ -15,7 +16,8 @@
                               height=""
                               loading="lazy"
                             >
-                      </figure>
+                        </figure>
+                      </a>
                     </div>
                 </div>
             </div>
