@@ -3,8 +3,11 @@
     "main": {
       "type": "about-section-01",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "company": "Company Name",
+        "representative": "Representative",
+        "tel": "1234567890",
+        "address": "Address",
+        "map": "https:\/\/www.google.com\/maps\/embed?pb=!1m14!1m8!1m3!1d15701.122483336947!2d123.9058235!3d10.3194124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9993e655070c1%3A0x9c674ac1180cde66!2sAyala%20Life%20-%20FGU%20Center!5e0!3m2!1sen!2sph!4v1724940547958!5m2!1sen!2sph"
       }
     }
   },
