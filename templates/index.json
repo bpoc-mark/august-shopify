@@ -1,28 +1,32 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "top-section01": {
       "type": "top-section01",
-      "settings": {}
+      "settings": {
+        "text": "August proposes traditional and orthodox beautiful silhouette designs created with luxurious materials in noble colors as daily luxury.",
+        "image": "shopify:\/\/shop_images\/lp_sect03_img01.png"
+      }
     },
     "top-section02": {
       "type": "top-section02",
-      "settings": {}
+      "settings": {
+      }
     },
     "top-section03": {
       "type": "top-section03",
       "settings": {
         "header": "’23 AUGUST DRESS COLLECTION",
         "link": "",
-        "image": "shopify://shop_images/Mask_Group_16.png"
+        "image": "shopify:\/\/shop_images\/Mask_Group_16.png"
       }
     },
     "featured_collection": {
@@ -58,15 +62,22 @@
     },
     "top-section05": {
       "type": "top-section05",
-      "settings": {}
+      "settings": {
+        "text": "オーガストは、贅沢な素材でつくる、伝統的であり正統派な美しい\nシルエットデザインをノーブルカラーに彩り、デイリーラグジュアリーとしてご提案します。",
+        "image": "shopify:\/\/shop_images\/Mask_Group_24.jpg"
+      }
     },
     "top-section06": {
       "type": "top-section06",
-      "settings": {}
+      "settings": {
+        "text": "ON SALE ITEMS",
+        "image": "shopify:\/\/shop_images\/Mask_Group_21.jpg"
+      }
     },
     "top-section07": {
       "type": "top-section07",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
