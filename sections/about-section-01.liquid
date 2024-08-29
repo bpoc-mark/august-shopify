@@ -1,0 +1,72 @@
+{{ 'page-company.css' | asset_url | stylesheet_tag }}
+<div class="Company-Page">
+  <section class="section01">
+    <div class="section01--wrap">
+      <h3 class="Company-Page--title">COMPANY</h3>
+      <div class="Company-Page-content">
+        <figure class="">
+          <iframe
+            src="{{ section.settings.map }}"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </figure>
+        <div class="company-details">
+          <p>
+            <span class="company-details-txt01">会社名</span>
+            <span class="company-details-txt02">{{ section.settings.company }}</span>
+          </p>
+          <p>
+            <span class="company-details-txt01">代表者</span>
+            <span class="company-details-txt02">{{ section.settings.representative }}</span>
+          </p>
+          <p>
+            <span class="company-details-txt01">電話番号</span>
+            <span class="company-details-txt02">{{ section.settings.tel }}</span>
+          </p>
+          <p>
+            <span class="company-details-txt01">住所</span>
+            <span class="company-details-txt02">{{ section.settings.address }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% schema %}
+{
+  "name": "Section name",
+  "settings": [
+    {
+        "type": "text",
+        "label": "Company Name",
+        "id": "company"
+    },
+    {
+        "type": "text",
+        "label": "Representative",
+        "id": "representative"
+    },
+    {
+        "type": "text",
+        "label": "Telephone Number",
+        "id": "tel"
+    },
+    {
+        "type": "text",
+        "label": "Address",
+        "id": "address"
+    },
+    {
+        "type": "text",
+        "label": "Map URL",
+        "id": "map"
+    },
+  ]
+}
+{% endschema %}
