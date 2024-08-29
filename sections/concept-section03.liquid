@@ -1,0 +1,50 @@
+{{ 'page-concept.css' | asset_url | stylesheet_tag }}
+
+<div class="Concept-Page concept_M">
+    <div class="Concept-Page--content">
+      <div class="section03">
+        <div class="section03--base">
+          <div class="section03--base__img">
+            <picture>
+              <source
+                srcset="{{ section.settings.image | img_url: 'master' }}"
+                media="(max-width: 899px)"
+              />
+              <img 
+                src="{{ section.settings.image | img_url: 'master' }}" alt="Image"
+                width=""
+                height=""
+                loading="lazy" />
+            </picture>
+            <p class="p1">{{ section.settings.textTop }}</p>
+          </div>
+          <div class="section03--wrap">
+            <p class="p2">{{ section.settings.textBottom }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  { 
+    "name": "Concept Section 03",
+    "settings": [
+      {
+          "type": "textarea",
+          "label": "Top Description",
+          "id": "textTop"
+      },
+      {
+          "type": "textarea",
+          "label": "Bottom Description",
+          "id": "textBottom"
+      },
+      {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+      }
+    ]
+  }
+{% endschema %}

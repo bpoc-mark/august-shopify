@@ -1,0 +1,50 @@
+{{ 'page-concept.css' | asset_url | stylesheet_tag }}
+
+<div class="Concept-Page concept_M">
+  <div class="Concept-Page--content">
+      <div class="section05__wrap">
+        <div class="l-container">
+            <div class="sect05-bg">
+                <img 
+                  src="{{ section.settings.image | img_url: '2048x2048' }}"
+                  alt="Image"
+                  width=""
+                  height=""
+                  loading="lazy"
+                >
+            </div>
+            <p class="section05__title">{{ section.settings.header }}</p>
+            <p class="desc descPD">{{ section.settings.textJP }}</p>
+            <p class="desc">{{ section.settings.textEN }}</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+{% schema %}
+  { 
+    "name": "Concept Section 01",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Header",
+            "id": "header"
+        },
+        {
+            "type": "textarea",
+            "label": "Description Text - JP",
+            "id": "textJP"
+        },
+        {
+            "type": "textarea",
+            "label": "Description Text - EN",
+            "id": "textEN"
+        },
+        {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+        }
+    ]
+  }
+{% endschema %}
