@@ -5,7 +5,7 @@
             <div class="l-container">
                 <div class="sect05-bg">
                     <img 
-                      src="{{ 'lp_sect05_img01.png' | asset_url }}"
+                      src="{{ section.settings.image | img_url: '2048x2048' }}"
                       alt="Image"
                       width=""
                       height=""
@@ -20,10 +20,11 @@
                         alt="Image" 
                         loading="lazy" 
                         sizes="(max-width: 899px) 100vw, 50vw" 
+                        width=""
+                        height=""
                     />
                 </figure>
-                <p class="desc">オーガストは、贅沢な素材でつくる、伝統的であり正統派な美しい シルエットデザインをノーブルカラーに彩り、デイリーラグジュアリーとしてご提案します。
-                </p>
+                <p class="desc">{{ section.settings.text }}</p>
                 <a href="{{ '/pages/concept' | link }}" class="btn--link btn--link__center">
                     <span>VIEW</span>
                 </a>
@@ -35,7 +36,18 @@
 {% schema %}
   {
     "name": "Top Section 05",
-    "settings": []
+    "settings": [
+        {
+            "type": "textarea",
+            "label": "Text",
+            "id": "text"
+        },
+        {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+        }
+    ]
   }
 {% endschema %}
 

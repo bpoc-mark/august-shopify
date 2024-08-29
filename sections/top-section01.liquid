@@ -17,7 +17,7 @@
                             loading="lazy"
                           >
                     </figure>
-                    <h2>August proposes traditional and orthodox beautiful silhouette designs created with luxurious materials in noble colors as daily luxury.</h2>
+                    <h2>{{ section.settings.text }}</h2>
                     <a href="{{ 'collections/all' | url }}" class="btn--link btn--link__center">
                         <span>SHOP</span>
                     </a>
@@ -31,7 +31,7 @@
                 <img
                 
                     class="rightImage"
-                    src="{{ 'lp_sect01_img01.png' | asset_url }}"
+                    src="{{ section.settings.image | img_url: 'master' }}"
                     alt="Image"
                     width=""
                     height=""
@@ -43,9 +43,20 @@
 </div>
 
 {% schema %}
-  {
+  { 
     "name": "Top Section 01",
-    "settings": []
+    "settings": [
+        {
+            "type": "text",
+            "label": "Text",
+            "id": "text"
+        },
+        {
+            "type": "image_picker",
+            "label": "Image",
+            "id": "image"
+        }
+    ]
   }
 {% endschema %}
 

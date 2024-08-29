@@ -9,7 +9,7 @@
               <a href="{{ 'collections/all' | url }}" class="image_button">
                 <figure>
                   <img 
-                    src="{{ 'lp_sect06_img01.png' | asset_url }}"
+                    src="{{ section.settings.image | img_url: 'master' }}"
                     alt="Image"
                     width=""
                     height=""
@@ -20,7 +20,7 @@
             </div>
             </div>
             <div class="section06_flex--item">
-              <h3>ON SALE ITEMS</h3>
+              <h3>{{ section.settings.text }}</h3>
             </div>
           </div>
         </div>
@@ -31,7 +31,18 @@
 {% schema %}
   {
     "name": "Top Section 06",
-    "settings": []
+    "settings": [
+      {
+          "type": "text",
+          "label": "Text",
+          "id": "text"
+      },
+      {
+          "type": "image_picker",
+          "label": "Image",
+          "id": "image"
+      }
+    ]
   }
 {% endschema %}
 
