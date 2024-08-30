@@ -64,7 +64,7 @@
       "type": "top-section05",
       "settings": {
         "text": "オーガストは、贅沢な素材でつくる、伝統的であり正統派な美しい\nシルエットデザインをノーブルカラーに彩り、デイリーラグジュアリーとしてご提案します。",
-        "link": "shopify:\/\/pages\/tokusho",
+        "link": "shopify:\/\/pages\/concept",
         "image": "shopify:\/\/shop_images\/Mask_Group_24.jpg"
       }
     },
@@ -72,7 +72,7 @@
       "type": "top-section06",
       "settings": {
         "text": "ON SALE ITEMS",
-        "link": "shopify:\/\/pages\/privacy",
+        "link": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/Mask_Group_21.jpg"
       }
     },
