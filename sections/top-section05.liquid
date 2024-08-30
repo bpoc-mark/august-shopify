@@ -25,7 +25,7 @@
                     />
                 </figure>
                 <p class="desc">{{ section.settings.text }}</p>
-                <a href="{{ '/pages/concept' | link }}" class="btn--link btn--link__center">
+                <a href="{{ section.settings.link }}" class="btn--link btn--link__center">
                     <span>VIEW</span>
                 </a>
             </div>
@@ -41,6 +41,12 @@
             "type": "textarea",
             "label": "Text",
             "id": "text"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Select an link for the button."
         },
         {
             "type": "image_picker",

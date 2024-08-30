@@ -6,7 +6,7 @@
           <div class="section06_flex">
             <div class="section06_flex--item">
             <div class="base03">
-              <a href="{{ 'collections/all' | url }}" class="image_button">
+              <a href="{{ section.settings.link }}" class="image_button">
                 <figure>
                   <img 
                     src="{{ section.settings.image | img_url: 'master' }}"
@@ -36,6 +36,12 @@
           "type": "text",
           "label": "Text",
           "id": "text"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Link",
+        "info": "Select an link for the button."
       },
       {
           "type": "image_picker",
